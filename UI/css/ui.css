@@ -1,0 +1,41 @@
+.primary {
+  display: flex;
+}
+
+.info-list {
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.info-list-item {
+  flex-direction: row;
+  margin: 0.5em 0;
+}
+
+/* search-box */
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 1rem;
+}
+
+.search-form {
+  display: flex;
+  height: 40px;
+}
+
+.search-form input[type="submit"] {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  border-radius: 0.3em;
+  font-size: 1em;
+}
+.search-form input[type="submit"] {
+  width: 4em;
+  border: 0;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background: gold;
+}
