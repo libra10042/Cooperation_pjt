@@ -8,7 +8,7 @@
 }
 
 .info-list-item {
-  flex-direction: row;
+  /* flex-direction: row; */
   margin: 0.5em 0;
 }
 

@@ -1,0 +1,9 @@
+.roadmap-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.roadmap-header .roadmap-item:nth-child(5) {
+  display: flex;
+  justify-content: flex-end;
+}
