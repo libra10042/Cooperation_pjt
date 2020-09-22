@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="todolist.todo.dolist.dao.TodoMapper">
+	
+	<insert id="insertTodo" parameterType="Todo">
+		insert into todo
+		(
+			todoseq
+			,userid
+			,tododata
+			,regdate
+			,importance
+			,deadline
+			,result
+			,comments
+		)
+		values
+		(
+			todoseq.nextval
+			,#{userid}
+			,#{tododata}
+			,sysdate
+			,#{importance}
+			,to_date(#{deadline},'YYYY-MM-DD')
+			,#{result}
+			,#{comments}
+		)
+	</insert>
+	
+	
+	<select id="selectAllTodo" parameterType="String" resultType="Todo">
+	
+	select 
+		todoseq
+		,userid
+		,tododata
+		,regdate
+		,importance
+		,to_char(deadline,'YYYY-MM-DD') deadline
+		,result
+		,comments	
+	from
+		todo
+	where
+		userid=#{userid}
+	order by
+		regdate desc
+	
+	</select>
+	
+	<delete id="deleteTodo" parameterType="int">
+	delete
+		todo
+	where
+		todoseq=#{todoseq}
+	
+	</delete>
+	
+</mapper>

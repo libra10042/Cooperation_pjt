@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <typeAliases>
+  	<typeAlias alias="roadmap" type="com.spring.withwork.vo.RoadmapVO"/>
+  	<typeAlias alias="Todo" type="com.spring.withwork.vo.Todo"/>
+  </typeAliases>
+  
+  <mappers>
+    <mapper resource="mappings/roadmap-mapper.xml"/>
+    <mapper resource="mappings/TodoMapper.xml" />
+  </mappers>
+</configuration>
+
+
+
+

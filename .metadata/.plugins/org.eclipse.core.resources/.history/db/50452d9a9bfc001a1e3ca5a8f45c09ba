@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>home</title>
+
+
+<script>
+	var flag=confirm("정말 탈퇴하시겠습니까?");
+	if(flag){
+		document.getElementById("delteForm").submit();
+	}
+
+
+</script>
+
+
+</head>
+<body>
+
+<h1>Todo List</h1>
+
+<br>
+	<!-- 로그인 전 메뉴 -->
+	<c:if test="${sessionScope.loginId==null}">
+	<a href="goSignUp">회원가입</a><br>
+	<a href="goLogin">로그인</a>
+	</c:if>
+	
+	<!-- 로그인 후 메뉴 -->
+	<c:if test="${sessionScope.loginId!=null}" >
+	
+	<form id="deleteForm" action="deleteUser" method="post">
+	</form>
+	
+	<a href="logout">로그아웃</a><br>
+	<a href="javascript:delUser()">탈퇴</a><br>
+	<a href="goList">리스트작성</a>
+	
+	</c:if>
+	
+
+</body>
+</html>

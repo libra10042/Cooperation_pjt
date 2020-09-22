@@ -1,5 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
+		<item value="org.aspectj:1.8.9.201607291758"/>
+		<item value="org.eclipse.aether.maven.feature:3.1.0.20140706-2237"/>
+		<item value="org.eclipse.ajdt:2.2.4.201607291758"/>
+		<item value="org.eclipse.cft.server.core.feature:1.1.0.v201608300659"/>
+		<item value="org.eclipse.cft.server.ui.feature:1.0.6.v201608300659"/>
+		<item value="org.eclipse.datatools.common.doc.user:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.connectivity.doc.user:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.connectivity.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.connectivity.oda.designer.core.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.connectivity.oda.designer.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.connectivity.oda.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.doc.user:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.apache.derby.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.hsqldb.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.ibm.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.ingres.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.jdbc.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.jdt.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.msft.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.mysql.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.oda.designer.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.oda.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.oracle.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.postgresql.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.sap.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.sqlite.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.enablement.sybase.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.intro:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.modelbase.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.sqldevtools.ddlgen.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.sqldevtools.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.sqldevtools.parsers.feature:1.13.0.201603142002"/>
+		<item value="org.eclipse.datatools.sqltools.doc.user:1.13.0.201603142002"/>
+		<item value="org.eclipse.draw2d:3.10.100.201606061308"/>
+		<item value="org.eclipse.egit.mylyn:4.5.0.201609210915-r"/>
+		<item value="org.eclipse.egit:4.5.0.201609210915-r"/>
+		<item value="org.eclipse.emf.codegen.ecore.ui:2.12.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.codegen.ecore:2.12.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.codegen.ui:2.8.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.codegen:2.11.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.common.ui:2.11.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.common:2.12.0.v20160420-0247"/>
+		<item value="org.eclipse.emf.converter:2.11.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.databinding.edit:1.4.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.databinding:1.4.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.ecore.edit:2.9.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.ecore.editor:2.12.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.ecore:2.12.0.v20160420-0247"/>
+		<item value="org.eclipse.emf.edit.ui:2.12.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.edit:2.12.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.mapping.ecore.editor:2.10.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.mapping.ecore:2.9.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.mapping.ui:2.9.0.v20160526-0356"/>
+		<item value="org.eclipse.emf.mapping:2.9.0.v20160526-0356"/>
+		<item value="org.eclipse.emf:2.12.0.v20160526-0356"/>
+		<item value="org.eclipse.epp.mpc:1.5.1.v20160929-1432"/>
+		<item value="org.eclipse.gef:3.11.0.201606061308"/>
+		<item value="org.eclipse.help:2.2.0.v20160907-1200"/>
+		<item value="org.eclipse.jdt:3.12.1.v20160907-1200"/>
+		<item value="org.eclipse.jgit:4.5.0.201609210915-r"/>
+		<item value="org.eclipse.jpt.common.eclipselink.feature:1.3.200.v201603180253"/>
+		<item value="org.eclipse.jpt.common.feature:1.5.0.v201603181811"/>
+		<item value="org.eclipse.jpt.dbws.eclipselink.feature:1.2.200.v201603180253"/>
+		<item value="org.eclipse.jpt.jaxb.eclipselink.feature:1.4.200.v201603180253"/>
+		<item value="org.eclipse.jpt.jaxb.feature:1.5.100.v201603180253"/>
+		<item value="org.eclipse.jpt.jpa.eclipselink.feature:3.4.100.v201603180253"/>
+		<item value="org.eclipse.jpt.jpa.feature:3.5.0.v201603181811"/>
+		<item value="org.eclipse.jst.common.fproj.enablement.jdt:3.8.0.v201603091933"/>
+		<item value="org.eclipse.jst.enterprise_ui.feature:3.8.0.v201605251556"/>
+		<item value="org.eclipse.jst.ws.axis2tools.feature:1.1.301.v201410160332"/>
+		<item value="org.eclipse.jst.ws.cxf.feature:1.1.203.v201503151903"/>
+		<item value="org.eclipse.jst.ws.jaxws.feature:1.2.203.v201602092125"/>
+		<item value="org.eclipse.m2e.feature:1.7.0.20160603-1933"/>
+		<item value="org.eclipse.m2e.logback.feature:1.7.0.20160603-1933"/>
+		<item value="org.eclipse.m2e.wtp.feature:1.3.1.20160831-1005"/>
+		<item value="org.eclipse.m2e.wtp.jaxrs.feature:1.3.1.20160831-1005"/>
+		<item value="org.eclipse.m2e.wtp.jpa.feature:1.3.1.20160831-1005"/>
+		<item value="org.eclipse.m2e.wtp.jsf.feature:1.3.1.20160831-1005"/>
+		<item value="org.eclipse.mylyn.bugzilla_feature:3.20.2.v20160630-1642"/>
+		<item value="org.eclipse.mylyn.commons.identity:1.12.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.commons.notifications:1.12.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.commons.repositories:1.12.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.commons:3.20.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.context_feature:3.20.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.discovery:3.20.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.github.feature:4.5.0.201609210915-r"/>
+		<item value="org.eclipse.mylyn.ide_feature:3.20.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.java_feature:3.20.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.monitor:3.20.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.tasks.ide:3.20.2.v20160630-1642"/>
+		<item value="org.eclipse.mylyn.team_feature:3.20.2.v20160630-1640"/>
+		<item value="org.eclipse.mylyn.wikitext_feature:2.9.0.v20160601-1831"/>
+		<item value="org.eclipse.mylyn_feature:3.20.2.v20160630-1858"/>
+		<item value="org.eclipse.oomph.p2:1.5.0.v20160908-1742"/>
+		<item value="org.eclipse.oomph.setup.core:1.5.0.v20160913-0854"/>
+		<item value="org.eclipse.oomph.setup:1.5.0.v20160914-0644"/>
+		<item value="org.eclipse.pde:3.12.1.v20160907-1200"/>
+		<item value="org.eclipse.platform:4.6.1.v20160907-1200"/>
+		<item value="org.eclipse.rcp:4.6.1.v20160907-1200"/>
+		<item value="org.eclipse.recommenders.mylyn.rcp.feature:2.4.3.v20160913-0645"/>
+		<item value="org.eclipse.recommenders.rcp.feature:2.4.3.v20160913-0645"/>
+		<item value="org.eclipse.rse.core:3.7.1.201603211627"/>
+		<item value="org.eclipse.rse.dstore:3.7.0.201603211627"/>
+		<item value="org.eclipse.rse.ftp:3.7.1.201603211627"/>
+		<item value="org.eclipse.rse.local:3.7.0.201603211627"/>
+		<item value="org.eclipse.rse.ssh:3.7.0.201603211627"/>
+		<item value="org.eclipse.rse.telnet:3.7.0.201603211627"/>
+		<item value="org.eclipse.rse.useractions:3.7.0.201603211627"/>
+		<item value="org.eclipse.rse:3.7.1.201603211627"/>
+		<item value="org.eclipse.tm.terminal.control.feature:4.1.0.201606052351"/>
+		<item value="org.eclipse.tm.terminal.feature:4.1.0.201606052351"/>
+		<item value="org.eclipse.tm.terminal.view.feature:4.1.0.201606052351"/>
+		<item value="org.eclipse.wst.common.fproj:3.7.0.v201505072140"/>
+		<item value="org.eclipse.wst.jsdt.chromium.debug.feature:0.4.0.v201609071943"/>
+		<item value="org.eclipse.wst.jsdt.feature:2.0.0.v201608301904"/>
+		<item value="org.eclipse.wst.json_ui.feature:1.0.0.v201609072018"/>
+		<item value="org.eclipse.wst.web_ui.feature:3.8.1.v201609072018"/>
+		<item value="org.eclipse.wst.xml.xpath2.processor.feature:2.0.301.v201409111854"/>
+		<item value="org.eclipse.wst.xml_ui.feature:3.8.0.v201608061842"/>
+		<item value="org.eclipse.wst.xsl.feature:1.3.401.v201509231858"/>
+		<item value="org.eclipse.zest:1.7.0.201606061308"/>
+		<item value="org.jboss.tools.m2e.wro4j.feature:1.1.0.201406251020"/>
+		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>
+		<item value="org.sonatype.m2e.egit.feature:0.14.0.201509090157"/>
+		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.2.201606141937-signed-20160830073346"/>
+		<item value="org.springframework.ide.eclipse.aeri.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.ajdt.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.aop.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.autowire.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.batch.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.boot.dash.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.boot.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.cft.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.data.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.integration.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.maven.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.mylyn.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.security.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.webflow.feature:3.8.2.201610040608-RELEASE"/>
+		<item value="org.springsource.sts.cft:3.8.2.201610040743-RELEASE"/>
+		<item value="org.springsource.sts.package:3.8.2.201610040743-RELEASE-e46"/>
+		<item value="org.springsource.sts:3.8.2.201610040743-RELEASE"/>
+	</list>
 	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\User\Desktop\IT공부\TodoList"/>
+			<item value="C:\Users\User\Desktop\IT공부\3차프로젝트\36_SpringMVC_MyBatis"/>
+			<item value="C:\Users\User\Desktop\IT공부\3차프로젝트\35_SpringMVC_JSON"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="302" key="DIALOG_X_ORIGIN"/>
+		<item value="959" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.springsource.ide.eclipse.commons.quicksearch.ui.QuickSearchDialog.DIALOG_SETTINGS">
+		<item value="true" key="CASE_SENSITIVE"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#x0D;&#x0A;&#x09;xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;&#x0D;&#x0A;&#x09;&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#x0D;&#x0A;&#x09;&lt;groupId&gt;com.spring&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&lt;artifactId&gt;biz&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&lt;name&gt;07_BoardService&lt;/name&gt;&#x0D;&#x0A;&#x09;&lt;packaging&gt;war&lt;/packaging&gt;&#x0D;&#x0A;&#x09;&lt;version&gt;1.0.0-BUILD-SNAPSHOT&lt;/version&gt;&#x0D;&#x0A;&#x09;&lt;properties&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;java-version&gt;1.8&lt;/java-version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;org.springframework-version&gt;4.3.16.RELEASE&lt;/org.springframework-version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;org.aspectj-version&gt;1.6.10&lt;/org.aspectj-version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;org.slf4j-version&gt;1.6.6&lt;/org.slf4j-version&gt;&#x0D;&#x0A;&#x09;&lt;/properties&gt;&#x0D;&#x0A;&#x09;&lt;dependencies&gt;&#x0D;&#x0A;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- https://mvnrepository.com/artifact/org.projectlombok/lombok --&gt;&#x0D;&#x0A;&lt;dependency&gt;&#x0D;&#x0A;    &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;&#x0D;&#x0A;    &lt;artifactId&gt;lombok&lt;/artifactId&gt;&#x0D;&#x0A;    &lt;version&gt;1.18.12&lt;/version&gt;&#x0D;&#x0A;    &lt;scope&gt;provided&lt;/scope&gt;&#x0D;&#x0A;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 스프링-마이바티스 연동 라이브러리 설정(시작) --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;groupId&gt;org.mybatis&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;artifactId&gt;mybatis&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;version&gt;3.4.6&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;groupId&gt;org.mybatis&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;artifactId&gt;mybatis-spring&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;version&gt;1.3.3&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 스프링-마이바티스 연동 라이브러리 설정(끝) --&gt;&#x09;&#x0D;&#x0A;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- JSON 데이터 처리를 위한 설정(jackson-databind) --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;version&gt;2.11.2&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 파일업로드 관련 설정 --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;groupId&gt;commons-fileupload&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;artifactId&gt;commons-fileupload&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;version&gt;1.4&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 오라클 JDBC 라이브러리 등록 --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;groupId&gt;com.oracle.database.jdbc&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;artifactId&gt;ojdbc6&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;version&gt;11.2.0.4&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;!-- === 스프링JDBC 사용을 위한 라이브러리 등록(시작) === --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- spring-jdbc, common-dbcp 라이브러리 등록 --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;!--  spring-jdbc 라이브러리 등록 설정 --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;org.springframework&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;spring-jdbc&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;${org.springframework-version}&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;groupId&gt;org.apache.commons&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;artifactId&gt;commons-dbcp2&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;    &lt;version&gt;2.5.0&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- === 스프링JDBC 사용을 위한 라이브러리 등록(끝) === --&gt;&#x0D;&#x0A;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- Spring --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;org.springframework&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;spring-context&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;${org.springframework-version}&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;exclusions&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;!-- Exclude Commons Logging in favor of SLF4j --&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;groupId&gt;commons-logging&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;artifactId&gt;commons-logging&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09; &lt;/exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;/exclusions&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;org.springframework&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;${org.springframework-version}&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- AspectJ --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;org.aspectj&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;aspectjrt&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;${org.aspectj-version}&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x09;&#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- Logging --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;org.slf4j&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;slf4j-api&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;${org.slf4j-version}&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;org.slf4j&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;jcl-over-slf4j&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;${org.slf4j-version}&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;scope&gt;runtime&lt;/scope&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;org.slf4j&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;${org.slf4j-version}&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;scope&gt;runtime&lt;/scope&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;log4j&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;log4j&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;1.2.15&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;exclusions&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;groupId&gt;javax.mail&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;artifactId&gt;mail&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;/exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;groupId&gt;javax.jms&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;artifactId&gt;jms&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;/exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;groupId&gt;com.sun.jdmk&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;artifactId&gt;jmxtools&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;/exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;groupId&gt;com.sun.jmx&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;artifactId&gt;jmxri&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;/exclusion&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;/exclusions&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;scope&gt;runtime&lt;/scope&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- @Inject --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;javax.inject&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;javax.inject&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;1&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- Servlet 2.5 --&gt;&#x0D;&#x0A;&lt;!--  &#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;javax.servlet&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;servlet-api&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;2.5&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;scope&gt;provided&lt;/scope&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;javax.servlet.jsp&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;jsp-api&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;2.1&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;scope&gt;provided&lt;/scope&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;--&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- Servlet 3.1 --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;javax.servlet&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;javax.servlet-api&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;3.1.0&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;scope&gt;provided&lt;/scope&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;javax.servlet.jsp&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;javax.servlet.jsp-api&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;2.3.1&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;scope&gt;provided&lt;/scope&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;javax.servlet&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;jstl&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;1.2&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;&#x0D;&#x0A;&#x09;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- Test --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;dependency&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;groupId&gt;junit&lt;/groupId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;artifactId&gt;junit&lt;/artifactId&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;version&gt;4.7&lt;/version&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;scope&gt;test&lt;/scope&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/dependency&gt;        &#x0D;&#x0A;&#x09;&lt;/dependencies&gt;&#x0D;&#x0A;    &lt;build&gt;&#x0D;&#x0A;        &lt;plugins&gt;&#x0D;&#x0A;            &lt;plugin&gt;&#x0D;&#x0A;                &lt;artifactId&gt;maven-eclipse-plugin&lt;/artifactId&gt;&#x0D;&#x0A;                &lt;version&gt;2.9&lt;/version&gt;&#x0D;&#x0A;                &lt;configuration&gt;&#x0D;&#x0A;                    &lt;additionalProjectnatures&gt;&#x0D;&#x0A;                        &lt;projectnature&gt;org.springframework.ide.eclipse.core.springnature&lt;/projectnature&gt;&#x0D;&#x0A;                    &lt;/additionalProjectnatures&gt;&#x0D;&#x0A;                    &lt;additionalBuildcommands&gt;&#x0D;&#x0A;                        &lt;buildcommand&gt;org.springframework.ide.eclipse.core.springbuilder&lt;/buildcommand&gt;&#x0D;&#x0A;                    &lt;/additionalBuildcommands&gt;&#x0D;&#x0A;                    &lt;downloadSources&gt;true&lt;/downloadSources&gt;&#x0D;&#x0A;                    &lt;downloadJavadocs&gt;true&lt;/downloadJavadocs&gt;&#x0D;&#x0A;                &lt;/configuration&gt;&#x0D;&#x0A;            &lt;/plugin&gt;&#x0D;&#x0A;            &lt;plugin&gt;&#x0D;&#x0A;                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;&#x0D;&#x0A;                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;&#x0D;&#x0A;                &lt;version&gt;2.5.1&lt;/version&gt;&#x0D;&#x0A;                &lt;configuration&gt;&#x0D;&#x0A;                    &lt;source&gt;1.8&lt;/source&gt;&#x0D;&#x0A;                    &lt;target&gt;1.8&lt;/target&gt;&#x0D;&#x0A;                    &lt;compilerArgument&gt;-Xlint:all&lt;/compilerArgument&gt;&#x0D;&#x0A;                    &lt;showWarnings&gt;true&lt;/showWarnings&gt;&#x0D;&#x0A;                    &lt;showDeprecation&gt;true&lt;/showDeprecation&gt;&#x0D;&#x0A;                &lt;/configuration&gt;&#x0D;&#x0A;            &lt;/plugin&gt;&#x0D;&#x0A;            &lt;plugin&gt;&#x0D;&#x0A;                &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;&#x0D;&#x0A;                &lt;artifactId&gt;exec-maven-plugin&lt;/artifactId&gt;&#x0D;&#x0A;                &lt;version&gt;1.2.1&lt;/version&gt;&#x0D;&#x0A;                &lt;configuration&gt;&#x0D;&#x0A;                    &lt;mainClass&gt;org.test.int1.Main&lt;/mainClass&gt;&#x0D;&#x0A;                &lt;/configuration&gt;&#x0D;&#x0A;            &lt;/plugin&gt;&#x0D;&#x0A;        &lt;/plugins&gt;&#x0D;&#x0A;    &lt;/build&gt;&#x0D;&#x0A;&lt;/project&gt;&#x0D;&#x0A;" key="LAST_QUERY"/>
+		<list key="SASH_WEIGHTS">
+			<item value="833"/>
+			<item value="166"/>
+		</list>
+		<list key="COLUMN_WIDTHS">
+			<item value="40"/>
+			<item value="400"/>
+			<item value="114"/>
+		</list>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="384" key="DIALOG_X_ORIGIN"/>
+			<item value="876" key="DIALOG_Y_ORIGIN"/>
+		</section>
 	</section>
 </section>

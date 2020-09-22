@@ -1,0 +1,36 @@
+package com.spring.withwork.controller;
+
+@Controller
+public class TodoController {
+	
+	@Autowired
+	TodoRepository repo;
+
+	//등록폼 이동 액션
+	@RequestMapping(value = "/TodoForm", method = RequestMethod.GET)
+	public String TodoForm() {
+
+		return "todoForm";
+	}
+
+	//TODO 등록 액션
+	@RequestMapping(value = "/TodoAdd", method = RequestMethod.POST)
+	public String TodoAdd(Todo todo) {
+
+		repo.insertTodo(todo);
+		
+		return "redirect:/";
+	}
+	
+
+
+	//TODO 업데이트 AJAX
+	@RequestMapping(value = "/updateTodo", method = RequestMethod.POST)
+	public @ResponseBody List<Todo> updateTodo(Todo todo) {
+
+			repo.updateTodo(todo);
+		
+			return repo.selectTodo();
+	}
+
+}

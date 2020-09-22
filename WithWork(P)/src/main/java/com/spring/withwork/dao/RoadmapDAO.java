@@ -1,0 +1,8 @@
+package com.spring.withwork.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class RoadmapDAO {
+
+}

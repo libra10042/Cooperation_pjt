@@ -1,0 +1,18 @@
+package com.spring.withwork.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.spring.withwork.dao.TodoRepository;
+
+@Controller
+public class TodoController {
+
+		@Autowired
+		TodoRepository repo;
+		
+		
+		
+		
+	
+}

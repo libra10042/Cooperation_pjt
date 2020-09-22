@@ -1,0 +1,5 @@
+package com.spring.withwork.controller;
+@Controller
+public class UserController {
+
+}
