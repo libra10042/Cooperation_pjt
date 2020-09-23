@@ -5,7 +5,8 @@ import lombok.Data;
 @Data
 public class Todo {
 
-	private String id, name, title, regdate, sequence, type; 
+	private int todoseq;
+	private String userid, tododate, regdate, dealine, comments, result, importance;
 	
 	
 }

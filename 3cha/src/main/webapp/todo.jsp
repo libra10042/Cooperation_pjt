@@ -27,65 +27,83 @@
 </head>
 <body>
 
-	<div>
-		<div id="listtitle">${sessionScope.username }님 todo List</div>
-	
-		<div id="time=result"></div>
-		<button id="list-one">전체조회</button>
-		<button id="list-two">기간조회</button>
-		<button id="list-three">백업</button>
+<div class="listbackground">
+		<div class="subtitle-font" id="listtitle">${sessionScope.username}님 todo List</div>
 		
-		<div id="sub-one">할일</div>
-		<div id="sub-two">중요도</div>
-		<div id="sub-three">기간</div>
-	
-	
-		<form action="insertTodo.do" method="post">
-			<input type="text" name="tododata" id="todobox">
-			<input type="text" name="comments" id="comments">
-			<div id="state">
-				<input type="radio" value="검토중" name="state" />
-				<input type="radio" value="진행중" name="state"/>
-				<input type="radio" value="승인대기" name="state" />
-				
+		<div class="subtitle-font" id="time-result"></div>
+		<button class="listbox" id="list-one">전체조회</button>
+		<button class="listbox" id="list-two">기간조회</button>
+		<button class="listbox" id="list-three">백업</button>
+		
+		<div class="subtitle-font" id="sublistmenu-one">할 일</div>
+		<div class="subtitle-font" id="sublistmenu-two">중요도</div>
+		<div class="subtitle-font" id="sublistmenu-three">기간</div>
+		
+		<!-- <button class="listbox" id="list-four">날짜</button>
+		 -->
+		
+		<form action="insertTodo" method="post">
+		
+		<input class="listbox" id="list-four" type="date" name="deadline"/>
+		
+			<input type="text" name="tododata" id="todobox" class="boardbox"> 
+			<input type="text" name="comments" placeholder="Comment"  id="commentbox" class="boardbox">
+			<div id="importantbox" class="subtitle-font">
+				<input type="radio" value="good" name="importance" style="width: 15px; height: 15px;">상 
+				<input type="radio" value="average" name="importance" style="width: 15px; height: 15px;" checked>중 
+				<input type="radio" value="poor" name="importance" style="width: 15px; height: 15px;">하
 			</div>
-			<input type="submit">
+			
+			<input type="submit" class="listbox" id="list-five">
+		
 		</form>
-	
 	</div>
-
-		<table>
+	
+	<div class="listbody">
+		<table style="padding-top:30px;">
+		
 		<c:forEach items="${todoList}" var="todo" varStatus="stat">
 		<tr>
-			<td>
-				${stat.count }
+			<td style="width:10%; text-align:center;">
+				${stat.count}
 			</td>
-			<td>
-				${todo.tododata}<br><input type="text" name="comments" value="${todo.comments}">
+			<td style="width:20%;">
+			${todo.tododata}<br><input type="text" name="comments" value="${todo.comments}">
 			</td>
-			<td>
-				<c:if test=${todo.state=="검토중"}">검토중</c:if>
-				<c:if test=${todo.state=="진행중"}">진행중</c:if>
-				<c:if test=${todo.state=="승인대기"}">승인대기</c:if>
+			<td  style="width:10%;">
+				<c:if test="${todo.importance=='good'}">상</c:if>
+				<c:if test="${todo.importance=='average'}">중</c:if>
+				<c:if test="${todo.importance=='poor'}">하</c:if>
 			</td>
-			<td>
-				${todo.deadline }
+			<td  style="width:20%; text-align:center;">
+				${todo.deadline}
 			</td>
-			<td>
+			<td  style="width:20%; text-align:center;">
+				<input type="radio" value="complete" name="${todo.todoseq}" 
+				<c:if test="${todo.result=='complete'}">
+				checked
+				</c:if>/>완료
+				
+				<input type="radio" value="failure" name="${todo.todoseq}" 
+				<c:if test="${todo.result=='failure'}">
+				checked
+				</c:if>/>실패
+				<input type="radio" value="pend" name="${todo.todoseq}" 
+				<c:if test="${todo.result=='pend'}">
+				checked
+				</c:if>/>보류
+			</td>
+			<td  style="width:20%; text-align:center;">
+			<form action="deleteTodo" method="post">
+				<input type="hidden" name="todoseq" value="${todo.todoseq}">
+				<button type="submit">삭제</button>
+			<button type="button">수정</button>
+			</form>
 			</td>
 		</tr>
 		</c:forEach>
-		
-		
-		
 		</table>
-	
-	
-	
 	</div>
-
-
-
 
 
 </body>

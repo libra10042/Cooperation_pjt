@@ -10,6 +10,7 @@
 <title>할일 불러오기</title>
 <script type="text/javascript">
 	window.onload= function(){
+		
 		var d = new Date();
 		var currentDate = d.getFullYear() + "년  " + (d.getMonth() + 1) + "월 " + d.getDate() +"일";
 		
@@ -17,16 +18,19 @@
 		result.innerHTML = currentDate;
 		
 		
+	
+	
+		function delUser(){
+			var flag=confirm("정말 탈퇴하시겠습니까?");
+			if(flag){
+				document.getElementById("delteForm").submit();
+			}
+		}
+
 	}
 	
 
-	function delUser(){
-		var flag=confirm("정말 탈퇴하시겠습니까?");
-		if(flag){
-			document.getElementById("delteForm").submit();
-		}
-	}
-
+	
 
 
 </script>
@@ -49,7 +53,7 @@
 	<c:if test="${sessionScope.loginId!=null}" >
 	
 	<form id="deleteForm" action="deleteUser.do" method="post">
-		<a href="logout">로그아웃</a><br>
+		<a href="logout.do">로그아웃</a><br>
 		<a href="javascript:delUser()">탈퇴</a><br>
 		<a href="goList">리스트작성</a>
 	</form>

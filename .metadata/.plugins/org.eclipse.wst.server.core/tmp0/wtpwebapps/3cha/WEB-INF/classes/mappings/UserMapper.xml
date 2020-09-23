@@ -35,11 +35,19 @@
   
   
   <delete id="deleteUser" parameterType="String">
-  delete
-  	todouser
-  where
-  	userid=#{userid}
+ 	 delete 
+  		todouser
+  	where
+  		userid=#{userid}
   
   </delete>  
+  
+  
+  <select id="checkId" parameterType="String" resultType="int">
+  	select count(*) from todouser where user_id = #{user_id}
+  
+  </select>
+  
+  
   
   </mapper>  

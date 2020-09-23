@@ -30,14 +30,15 @@
       <dl class="groupInfo headerInner">
           <dt>GOOGLE</dt>
           <dd>
-              <img src="img/user.png" alt="">
+              <img src="./common/img/user.png" alt="">
               <span>최은서</span>님, 안녕하세요.
           </dd>
       </dl>
       <ul class="allInfo">
-          <li><a href="todo.jsp" class="todoIcon">TO-DO</a></li>
+          <li><a href="todo2.jsp" class="todoIcon">TO-DO</a></li>
           <li><a href="confirm.jsp" class="confirmIcon">CONFIRM</a></li>
           <li class="active"><a href="roadmap.jsp" class="roadMapIcon">ROADMAP</a></li>
+          <li><a href="project.jsp" class="todoIcon">PROJECT</a></li>
       </ul>
       <dl class="headerInner">
           <dt>참여중인 프로젝트</dt>

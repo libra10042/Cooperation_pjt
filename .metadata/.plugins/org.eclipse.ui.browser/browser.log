@@ -1,0 +1,14 @@
+
+9월 23, 2020 19:48:09.20 NEW SESSION
+9월 23, 2020 19:48:09.20 [18728:14524:0923/194809.199:ERROR:cache_util_win.cc(21)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+9월 23, 2020 19:48:09.20 [18728:14524:0923/194809.200:ERROR:cache_util.cc(139)] Unable to move cache folder C:\Users\User\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\User\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+9월 23, 2020 19:48:09.20 [18728:14524:0923/194809.200:ERROR:disk_cache.cc(184)] Unable to create cache
+9월 23, 2020 19:48:09.20 [18728:14524:0923/194809.200:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+9월 23, 2020 19:48:09.81 [18864:19052:0923/194809.818:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 23, 2020 19:48:10.50 [18864:12184:0923/194810.500:ERROR:cache_util_win.cc(21)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+9월 23, 2020 19:48:10.50 [18864:12184:0923/194810.501:ERROR:cache_util.cc(139)] Unable to move cache folder C:\Users\User\AppData\Local\Google\Chrome\User Data\GrShaderCache\GPUCache to C:\Users\User\AppData\Local\Google\Chrome\User Data\GrShaderCache\old_GPUCache_000
+9월 23, 2020 19:48:10.50 [18864:12184:0923/194810.501:ERROR:disk_cache.cc(184)] Unable to create cache
+9월 23, 2020 19:48:10.50 [18864:12184:0923/194810.501:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+9월 23, 2020 19:48:12.08 기존 브라우저 세션에서 여는 중입니다.
+9월 23, 2020 22:49:35.52 [18864:11724:0923/224935.523:ERROR:CONSOLE(2211)] "Cannot find context with specified id", source: devtools://devtools/bundled/sdk/sdk.js (2211)
+9월 23, 2020 22:49:35.53 [18864:11724:0923/224935.524:ERROR:CONSOLE(216)] "Extension server error: Inspector protocol error: Cannot find context with specified id", source: devtools://devtools/bundled/extensions/extensions.js (216)

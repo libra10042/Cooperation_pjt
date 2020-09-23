@@ -1,0 +1,83 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,500i,600,600i,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./common/css/reset.css" />
+    <link rel="stylesheet" href="./common/css/common.css" />
+	 <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./common/js/common.js"></script>
+    <script src="./common/js/work.js"></script>
+<title>팝업</title>
+</head>
+<body>
+
+	 <div class="popup workAddPopup">
+        <dl>
+            <dt>
+                업무 추가
+                <a href="#" class="popupOK">X</a>
+            </dt>
+            <dd>
+                <div class="table workDetail">
+                    <table>
+                        <colgroup>
+                            <col width="15%">
+                            <col width="30%">
+                            <col width="15%">
+                            <col width="30%">
+                        </colgroup>
+                        <tr>
+                            <th>업무</th>
+                            <td colspan="3"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>내용</th>
+                            <td colspan="3"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>지시자</th>
+                            <td>
+                                <select disabled>
+                                    <option value="최은서(사원)">최은서(사원)</option>
+                                </select>
+                            </td>
+                            <th>업무자</th>
+                            <td>
+                                <select>
+                                    <option value="최은서(사원)">최은서(사원)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>기한</th>
+                            <td colspan="3">
+                                <input type="date">
+                                &nbsp;~&nbsp;
+                                <input type="date">
+                            </td>
+                        </tr>
+                    </table>
+                </div>               
+                <div class="btnBox">
+                    <a href="#" class="popupOK">확인</a>
+                </div>
+            </dd>
+        </dl>
+    </div>     
+    <div class="darkBack"></div>
+</body>
+</html>

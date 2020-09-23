@@ -136,7 +136,7 @@ function autoLeftPad(num, digit) {
   }
   return num;
 }
-// ------------------------- popup ----------------------------
+// ------------------------- tab메뉴 ----------------------------
 $().ready(function () {
   // 탭메뉴
   $(".roadMapNav li").click(function () {
@@ -149,16 +149,88 @@ $().ready(function () {
 });
 
 
-// ------------------------- Roadmap Ajax -----------------------------
+
+// ---------------------------popup메뉴-------------------------------
+//
+//$().ready(function(){
+//
+//    // 팝업 닫기
+//    $(".pop dt a, .darkBack").click(function(){
+//        $(".pop").removeClass("show");
+//        $(".darkBack").hide();
+//    });
+//
+//    // 팝업닫기
+//    $(".popupOK, .darkBack").click(function(){
+//        $(".popup").hide();
+//        $(".popupM").removeClass("show");
+//        $(".popupP").hide();
+//        $(".darkBack").hide();
+//        
+//     // 팝업열기
+//        $(".stateForm dt").click(function(){
+//            $(".workAddPopup").show();
+//            $(".darkBack").show();
+//        });
+//        
+//        $(".workAddBtn").click(function(){
+//            $(".workAddPopup").show();
+//            $(".darkBack").show();
+//        });
+//        
+//    });
+// 
+//    
+//});
+//
+//
+//$().ready(function(){
+//    // 탭메뉴
+//    $(".todoNav li").click(function(){
+//        var idx = $(this).index();
+//        $(".todoNav li").removeClass("active");
+//        $(this).addClass("active");
+//        $(".todoCont > li").removeClass("active");
+//        $(".todoCont > li").eq(idx).addClass("active");
+//    });
+//
+//    // 팝업열기
+//    $(".todoContList li a, .departTodo dd li a").click(function(){
+//        $(".workPopup").show();
+//        $(".darkBack").show();
+//    });
+//    
+//    $(".workAddBtn").click(function(){
+//        $(".workAddPopup").show();
+//        $(".darkBack").show();
+//    });
+//
+//});
+
+
+
 $().ready(function(){
-	button
+    // 탭메뉴
+    $(".todoNav li").click(function(){
+        var idx = $(this).index();
+        $(".todoNav li").removeClass("active");
+        $(this).addClass("active");
+        $(".todoCont > li").removeClass("active");
+        $(".todoCont > li").eq(idx).addClass("active");
+    });
 
+    // 팝업열기
+    $(".todoContList li a, .departTodo dd li a").click(function(){
+    	
+    	console.log("팝업열기");
+        $(".workAddPopup").show();
+        $(".darkBack").show();
+    });
+    
+    $(".workAddBtn").click(function(){
+        $(".workAddPopup").show();
+        $(".darkBack").show();
+    });
 
-
-})
-
-
-
-
-
+});
 

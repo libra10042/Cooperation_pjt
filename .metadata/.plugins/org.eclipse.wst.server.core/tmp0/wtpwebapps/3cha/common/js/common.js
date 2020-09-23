@@ -85,4 +85,14 @@ $().ready(function(){
         $(".chatProfile").hide();
         $(".msgPopup").show();
     });
+    
+    /********** 로드맵팝업(충진) **********/
+    
+    // 팝업열기
+    $(".projectThumb").click(function(){
+    	$(".roadmapPopup").show();
+        $(".darkBack").show();
+    })
+    
+    
 })

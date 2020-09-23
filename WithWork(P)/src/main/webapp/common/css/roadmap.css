@@ -196,7 +196,7 @@
 }
 
 /* -----------------------------------modal------------------------------------------- */
-.modal {
+/*.modal {
   display: none;
   top: px;
 }
@@ -233,3 +233,4 @@ label[for="modal-switch"] span {
   height: 1px;
   opacity: 0;
 }
+*/

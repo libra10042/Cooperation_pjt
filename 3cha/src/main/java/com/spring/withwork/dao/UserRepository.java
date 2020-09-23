@@ -16,16 +16,21 @@ public class UserRepository {
 		System.out.println(">> UserRepository 생성자 ");
 	}
 	
+	
+	
+	//회원가입
 	public int insertUser(User user){
 		int result = 0; 
 		try{
-			result = mybatis.insert("UserRepository.inesrtUser", user);
+			result = mybatis.insert("UserRepository.insertUser", user);
 		}catch(Exception e){
 			e.printStackTrace();
 			return result; 
 		}
 		return result; 
 	}
+	
+	//로그인
 	public User selectUser(User user){
 		User result = null;
 		try{
@@ -37,6 +42,7 @@ public class UserRepository {
 		return result; 
 		
 	}
+	//회원 탈퇴
 	public int deleteUser(String userid){
 		int result =0; 
 		
@@ -53,6 +59,16 @@ public class UserRepository {
 	
 	
 	
-	
-	
+	//아이디 중복검사
+	public int userIdCheck(String userid){
+		int result = 0; 
+		try{
+			result = mybatis.selectOne("UserRepository.checkId", userid);
+		}catch(Exception e){
+			e.printStackTrace();
+			return result; 
+			
+		}
+		return result; 
+	}
 }

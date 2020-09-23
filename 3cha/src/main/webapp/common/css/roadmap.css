@@ -1,6 +1,5 @@
-/* --------------------roadmap/schedule header-------------------- */
 .roadMapNav{
-  font-size: 0;
+   font-size: 0;
 }
 
 .roadMapNav li{
@@ -176,60 +175,8 @@
   border: 1px solid black;
 }
 
-/* ---------------------------------------- modal ----------------------------------- */
-.modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-.dialog {
-  width: 50vw;
-  padding: 2em;
-  border-radius: 1em;
-  background: white;
-}
+/* ------------- ÆË¾÷ ÃæÁø ------------- */
 
-/* -----------------------------------modal------------------------------------------- */
-.modal {
-  display: none;
-  top: px;
-}
-#modal-switch:checked ~ .modal {
-  display: flex;
-}
-label[for="modal-switch"] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  /* top: 1.3rem; */
-  /* right: 1rem; */
-  /* z-index: 100; */
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  /* background: red; */
-}
 
-label[for="modal-switch"]:before {
-  font-size: 2rem;
-  cursor: pointer;
-}
-#modal-switch:checked ~ label[for="modal-switch"]:before {
-  color: dodgerblue;
-}
-#modal-switch,
-label[for="modal-switch"] span {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
+
+

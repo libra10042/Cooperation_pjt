@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="36_SpringMVC_MyBatis"/>
-<aop-project name="WithWork(P)"/>
 <aop-project name="WithWork"/>
+<aop-project name="WithWork(P)"/>
 <aop-project name="TodoList"/>
+<aop-project name="3cha"/>
 <aop-project name="35_SpringMVC_JSON"/>
 </aop-reference-model>
