@@ -63,10 +63,10 @@
                     </div>
                     <div class="roadMapState smallMG">
                         <dl class="stateForm">
-                            <dt class="waiting">검토 중</dt>
+                            <dt class="waiting" name="p_stat">검토 중</dt>
                             <dd>
                                 <a href="#">
-                                    <dl class="projectThumb">
+                                    <dl class="projectThumb" >
                                         <dt>LINE</dt>
                                         <dd>AI/인공지능 프로젝트</dd>
                                         <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quaerat quisquam magni aperiam minima quam, dicta sequi. Vel, consectetur totam.</dd>
@@ -76,7 +76,7 @@
                            
                         </dl>
                         <dl class="stateForm">
-                            <dt class="starting">진행 중</dt>
+                            <dt class="starting" name="p_stat">진행 중</dt>
                             <dd>
                                 <a href="#">
                                     <dl class="projectThumb">
@@ -89,7 +89,7 @@
                             
                         </dl>
                         <dl class="stateForm">
-                            <dt class="stopping">승인대기 중</dt>
+                            <dt class="stopping" name="p_stat">승인대기 중</dt>
                             <dd>
                                 <a href="#">
                                     <dl class="projectThumb">
@@ -140,10 +140,11 @@
     
      <%@include file="./common/include/footer.jsp" %>
    
-    <!-- ------상세 보기 팝업 popup ------ -->
+    <!-- ------프로젝트 팝업 팝업 popup ------ -->
     <div class="popupP roadmapPopup">
         <dl>
             <dt>
+            	
             	
                 	프로젝트 검토중
                 <a href="#" class="popupOK1">X</a>
@@ -163,12 +164,164 @@
             </dd>
         </dl>
     </div>
+    
+    <!-- -----상세 내역 팝업 ------ -->
+     <div class="popupP roadmapPopup">
+        <dl>
+            <dt>
+            	
+            	
+                	프로젝트 검토중
+                <a href="#" class="popupOK1">X</a>
+            </dt>
+            <dd>
+                <ul>
+                    <li>
+                        <img src="./common/img/profile.png" alt="" width="110px">
+                    </li>
+                    <li>권은영부장</li>
+                    <li>담당자</li>
+                </ul>
+                <div class="btnBox set2">
+                    <a href="#" id="messRoad">상세보기</a>
+                    <a href="#">문의하기</a>
+                </div>
+            </dd>
+        </dl>
+    </div>
+    
+    
+    <!-- ----프로젝트 정보 팝업---- -->
+    <div class="popup roadmapInfoPopup">
+        <dl>
+            <dt>
+                		상태(점검, 진행, 최종검토)
+            </dt>
+            <dd>
+                <div class="table workDetail">
+                    <table>
+                        <colgroup>
+                            <col width="15%">
+                            <col width="30%">
+                            <col width="15%">
+                            <col width="30%">
+                        </colgroup>
+                        <tr>
+                            <th>프로젝트명</th>
+                            <td colspan="3">라인</td>
+                        </tr>
+                        <tr>
+                            <th>프로젝트내용</th>
+                            <td colspan="3">AI 음성인식 프로젝트</td>
+                        </tr>
+                        <tr>
+                            <th>수주회사</th>
+                            <td>라인</td>
+                            <th>발주회사	</th>
+                            <td>디지토피아</td>
+                        </tr>
+                        <tr>
+                            <th>인력구성</th>
+                            <td colspan="3">개발2, 디자인1, 기획1, 퍼블리셔1.</td>
+                        </tr>
+                        <tr>
+                            <th>예상집행액</th>
+                            <td colspan="3">60,000,000</td>
+                        </tr>
+                    </table>
+                </div>               
+                <div class="btnBox">
+                    <a href="#" class="popupOK">확인</a>
+                    <a href="#" class="popupBACK">뒤로가기</a>
+                </div>
+            </dd>
+        </dl>
+    </div>     
     <div class="darkBack"></div>
-    
-    <!-- -----상세 보기 ------ -->
-    
-    
-    
+    <!-- ------- 프로젝트 생성 팝업 -------- -->
+    <form action="projectCreate.do" method="post">
+    <div class="popup projectAddPopup">
+        <dl>
+            <dt>
+               	 프로젝트 생성
+                <a href="#" class="popupOK">X</a>
+            </dt>
+            <dd>
+                <div class="table workDetail">
+                    <table>
+                        <colgroup>
+                            <col width="15%">
+                            <col width="30%">
+                            <col width="15%">
+                            <col width="30%">
+                        </colgroup>
+                        <tr>
+                            <th>서류제출</th>
+                            <td colspan="3">
+                            	<form method="post" enctype="multipart/form-data" action="fup.cgi">
+                            		파일업로드<input type="file" name="upfile">
+                            		<input type="submit" value="업로드">
+                            		
+                            	
+                            		<br/>
+                            		
+                            	</form>
+                           
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>프로젝트명</th>
+                            <td colspan="3"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>내용</th>
+                            <td colspan="3"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>담당자</th>
+                            <td colspan="3"><input type="text"></td>
+                        </tr>
+                      
+                        <tr>
+                            <th>예상일정</th>
+                            <td colspan="3"><input type="text"></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th>인력구성</th>
+                            <td colspan="3"><input type="text"></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>수주</th>
+                            <td colspan="1"><input type="text"></td>
+                            <th>발주</th>
+                            <td colspan="1"><input type="text"></td>
+                        </tr>
+                        
+              
+                        
+                        <tr>
+                            <th>예상기한</th>
+                            <td colspan="3">
+                                <input type="date">
+                                &nbsp;~&nbsp;
+                                <input type="date">
+                            </td>
+                        </tr>
+                    </table>
+                </div>               
+                <div class="btnBox">
+                    <a href="#" class="popupOK">신청</a>
+                    <a href="#">취소</a>
+                </div>
+            </dd>
+        </dl>
+    </div>
+    </form>
+    <div class="darkBack"></div>
     
     
     

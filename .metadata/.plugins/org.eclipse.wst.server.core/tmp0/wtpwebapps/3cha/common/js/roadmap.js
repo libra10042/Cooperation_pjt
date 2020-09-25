@@ -229,8 +229,24 @@ $().ready(function(){
     
     $(".workAddBtn").click(function(){
         $(".workAddPopup").show();
-        $(".darkBack").show();
     });
 
+    
+    $("#messRoad").click(function(){
+    	console.log("InfoPopup");
+    	$(".roadmapInfoPopup").show();
+    	
+    })
+    
+    $('.projectBtn').click(function(){
+    	console.log("projectAddPopup");
+    	$(".projectAddPopup").show();
+    	
+    })
+    
 });
+
+
+
+
 
