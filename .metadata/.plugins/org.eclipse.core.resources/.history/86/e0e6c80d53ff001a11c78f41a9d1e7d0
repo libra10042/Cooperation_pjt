@@ -1,0 +1,15 @@
+package com.spring.withwork.util;
+
+import org.springframework.stereotype.Component;
+
+@Component("fileUtils")
+public class FileUtils {
+
+	final static int COUNTPERPAGE =5;
+	final static int PAGEERGROUP = 3;
+	private static final String UPLOADPATH = "C:/File";
+	
+	public List<Map<String, Object>> parse
+	
+	
+}

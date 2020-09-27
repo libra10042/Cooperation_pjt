@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ProjectRepository">
+  
+  
+  
+  <!-- 파입 업로드 다운로드 처리 -->
+  <insert id="insertFile" parameterType="File">
+  	insert into file
+  	(
+  		f_no,
+  		g_no,
+  		org_name,
+  		sav_name,
+  		file_size,
+  		f_regdate,
+  	)
+  	values
+  	(
+  		f_no.nextval,
+  		g_no.currval,
+  		#{org_name},
+  		#{sav_name},
+  		#{file_size},
+  		sysdate
+  	)  
+  </insert>
+  <select id="selectFile" resultType="File" parameterType="String">
+  	select 
+  		F_NO f_no,
+  		G_NO g_no,
+  		ORG_NAME org_name,
+  		SAV_NAME sav_name
+  		FILE_SIZE file_size
+  	FROM
+  		FILE
+  	WHERE
+  		G_NO = ${g_no}
+  </select>
+
+
+	<select id="selectFileBySeq" parameterType="String" resultType="File">
+		SELECT 
+			F_NO f_no, 
+			G_NO g_no,
+			ORG_NAME org_name,
+			SAV_NAME sav_name
+		FROM
+			FILE
+		WHERE
+			F_NO = #{F_NO}
+			
+	
+	</select>  
+  
+  
+  
+  
+  
+</mapper>  

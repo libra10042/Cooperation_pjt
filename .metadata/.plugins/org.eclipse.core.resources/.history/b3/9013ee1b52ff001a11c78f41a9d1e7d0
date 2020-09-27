@@ -1,0 +1,11 @@
+package com.spring.withwork.util;
+
+import org.springframework.stereotype.Component;
+
+@Component("fileUtils")
+public class FileUtils {
+
+	private static final String filePath = "C:\\mp\\file\\";
+	
+	
+}

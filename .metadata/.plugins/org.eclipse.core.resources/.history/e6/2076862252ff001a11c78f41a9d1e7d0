@@ -1,0 +1,13 @@
+package com.spring.withwork.util;
+
+import org.springframework.stereotype.Component;
+
+@Component("fileUtils")
+public class FileUtils {
+
+	private static final String filePath = "C:/File";
+	
+	public List<Map<String, Object>> parse
+	
+	
+}

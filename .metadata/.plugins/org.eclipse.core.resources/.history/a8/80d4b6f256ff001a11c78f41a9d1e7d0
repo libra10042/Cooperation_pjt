@@ -1,0 +1,23 @@
+package com.spring.withwork.dao;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.spring.withwork.vo.File;
+
+@Repository("projectRepository")
+public class ProjectRepository {
+
+	
+	@Autowired
+	SqlSessionTemplate mybatis;
+	
+	public int insertFile(File vo){
+		int result = 0; 
+		
+	}
+	
+	
+	
+}
