@@ -6,13 +6,14 @@
   <typeAliases>
   	<typeAlias alias="Guest" type="com.spring.withwork.vo.Guest"/>
   	<typeAlias alias="Todo" type="com.spring.withwork.vo.Todo"/>
-  <!-- 	<typeAlias alias="Project" type="com.spring.withwork.vo.File"/>  -->
+  	<typeAlias alias="Todo" type="com.spring.withwork.vo.Roadmap"/>
+  	
   </typeAliases>
   
   <mappers>
    <mapper resource="mappings/GuestMapper.xml"/>
-   <mapper resource="mappings/TodoMapper.xml" /> 
-   <!-- <mapper resource="mappings/ProjectMapper.xml" /> -->
+   <mapper resource="mappings/TodoMapper.xml" />
+   <mapper resource="mappings/RoadmapMapper.xml"/>
   </mappers>
 </configuration>
 

@@ -1,0 +1,15 @@
+package com.spring.withwork.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller("fileUploadController")
+public class FileUploadController {
+
+	@GetMapping("/fileUploadForm.do")
+	public void fileUploadForm(){
+		
+		
+	}
+	
+	
+}

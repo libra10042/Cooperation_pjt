@@ -47,16 +47,18 @@
                 <div class="progress" style="display: block;">
                     <div class="roadMapSearch">
                         <select>
+                            <option>쿠팡</option>
                             <option>카카오</option>
-                            <option>우아한형제들</option>
                             <option>라인</option>
+                            <option>배달의민족</option>
+                            <option>워크워드</option>
+                            <option>
                         </select>
                         <select>
-                            <option>디자인</option>
-                            <option>개발</option>
-                            <option>경영</option>
-                            <option>인사</option>
-                            <option>마케팅</option>
+                            <option>기획(AE,EP)</option>
+                            <option>제작(CD/CW/PD, 디자이너)</option>
+                            <option>개발(개발자)</option>
+                            <option>경영지원(인사, 총무, 회계)</option>
                         </select>
                         <input type="text"> 
               <input type="submit" value="검색">
@@ -238,91 +240,86 @@
         </dl>
     </div>     
     <div class="darkBack"></div>
-    <!-- ------- 프로젝트 생성 팝업 -------- -->
-    <form action="projectCreate.do" method="post">
-    <div class="popup projectAddPopup">
-        <dl>
-            <dt>
-               	 프로젝트 생성
-                <a href="#" class="popupOK">X</a>
-            </dt>
-            <dd>
-                <div class="table workDetail">
-                    <table>
-                        <colgroup>
-                            <col width="15%">
-                            <col width="30%">
-                            <col width="15%">
-                            <col width="30%">
-                        </colgroup>
-                        <tr>
-                            <th>서류제출</th>
-                            <td colspan="3">
-                            	<!-- <form method="post" enctype="multipart/form-data" action="downloadFile.do">
-                            		파일업로드<input type="file" name="file">
-                            		<input type="submit" value="업로드">
-                            		
-                            	
-                            		<br/>
-                            		
-                            	</form> -->
-                           
-                            
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>프로젝트명</th>
-                            <td colspan="3"><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <th>내용</th>
-                            <td colspan="3"><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <th>담당자</th>
-                            <td colspan="3"><input type="text"></td>
-                        </tr>
-                      
-                        <tr>
-                            <th>예상일정</th>
-                            <td colspan="3"><input type="text"></td>
-                        </tr>
-                        
-                        
-                        <tr>
-                            <th>인력구성</th>
-                            <td colspan="3"><input type="text"></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>수주</th>
-                            <td colspan="1"><input type="text"></td>
-                            <th>발주</th>
-                            <td colspan="1"><input type="text"></td>
-                        </tr>
-                        
-              
-                        
-                        <tr>
-                            <th>예상기한</th>
-                            <td colspan="3">
-                                <input type="date">
-                                &nbsp;~&nbsp;
-                                <input type="date">
-                            </td>
-                        </tr>
-                    </table>
-                </div>               
-                <div class="btnBox">
-                    <a href="#" class="popupOK">신청</a>
-                    <a href="#">취소</a>
-                </div>
-            </dd>
-        </dl>
-    </div>
-    </form>
-    <div class="darkBack"></div>
-    
+   <!-- ------- 프로젝트 생성 팝업 -------- -->
+	<!-- <form action="projectCreate.do" method="post"> -->
+		<div class="popup projectAddPopup">
+			<dl>
+				<dt>
+					프로젝트 생성 <a href="#" class="popupOK">X</a>
+				</dt>
+				<dd>
+					<div class="table workDetail">
+						<table>
+							<colgroup>
+								<col width="15%">
+								<col width="30%">
+								<col width="15%">
+								<col width="30%">
+							</colgroup>
+							<tr>
+								<th>서류제출</th>
+								<td colspan="3">
+									<form action="uploadFormAction.do" method="post"
+										enctype="multipart/form-data">
+										<input type="file" name="uploadFile" multiple>
+
+									</form> 
+ 
+
+								</td>
+							</tr>
+							<tr>
+								<th>프로젝트명</th>
+								<td colspan="3"><input type="text" style="width: 100%" /></td>
+							</tr>
+							<tr>
+								<th>내용</th>
+								<td colspan="3"><input type="text" style="width: 100%" /></td>
+							</tr>
+							<tr>
+								<th>담당자</th>
+								<td colspan="3"><input type="text" style="width: 100%" /></td>
+							</tr>
+
+							<tr>
+								<th>투입인력</th>
+								<td colspan="3"><input type="text" style="width: 100%" /></td>
+							</tr>
+
+							<tr>
+								<th>수주</th>
+								<td colspan="1"><input type="text" style="width: 100%" /></td>
+								<th>발주</th>
+								<td colspan="1"><input type="text" style="width: 100%" /></td>
+							</tr>
+
+
+							<tr>
+								<th>예상기한</th>
+								<td colspan="1"><input type="text" style="width: 100%" /></td>
+								<th>국내/해외</th>
+								<td colspan="1"><input type="checkbox" name="chk_info"
+									value="국내">국내 <input type="checkbox" name="chk_info"
+									value="해외" checked="checked">해외</td>
+							</tr>
+
+
+
+							<tr>
+								<th>투입금액</th>
+								<td colspan="3"><input type="text" style="width: 100%" />
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="btnBox">
+						<a href="#" class="popupOK" >신청</a> <a href="#">취소</a>
+					</div>
+				</dd>
+			</dl>
+		</div>
+	<!--  </form>-->
+	<div class="darkBack"></div>
     
     
   </body>

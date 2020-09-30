@@ -12,3 +12,17 @@
 9월 23, 2020 19:48:12.08 기존 브라우저 세션에서 여는 중입니다.
 9월 23, 2020 22:49:35.52 [18864:11724:0923/224935.523:ERROR:CONSOLE(2211)] "Cannot find context with specified id", source: devtools://devtools/bundled/sdk/sdk.js (2211)
 9월 23, 2020 22:49:35.53 [18864:11724:0923/224935.524:ERROR:CONSOLE(216)] "Extension server error: Inspector protocol error: Cannot find context with specified id", source: devtools://devtools/bundled/extensions/extensions.js (216)
+
+9월 30, 2020 12:23:50.11 NEW SESSION
+9월 30, 2020 12:23:50.11 [11080:28144:0930/122350.116:ERROR:cache_util_win.cc(21)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+9월 30, 2020 12:23:50.12 [11080:28144:0930/122350.117:ERROR:cache_util.cc(139)] Unable to move cache folder C:\Users\User\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\User\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+9월 30, 2020 12:23:50.12 [11080:28144:0930/122350.117:ERROR:disk_cache.cc(184)] Unable to create cache
+9월 30, 2020 12:23:50.12 [11080:28144:0930/122350.117:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+9월 30, 2020 12:23:50.50 [25988:22584:0930/122350.500:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 30, 2020 12:23:52.31 기존 브라우저 세션에서 여는 중입니다.
+9월 30, 2020 12:24:17.53 [16980:30360:0930/122417.533:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 30, 2020 12:25:36.92 [23560:25736:0930/122536.926:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 30, 2020 12:40:01.93 [14224:30520:0930/124001.937:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 30, 2020 12:52:58.89 [2964:28956:0930/125258.898:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 30, 2020 12:58:05.81 [30408:28932:0930/125805.813:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 30, 2020 16:01:42.63 [30408:27400:0930/160142.623:ERROR:socket_stream.cc(219)] Closing stream with result -2

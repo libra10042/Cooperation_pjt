@@ -4,72 +4,47 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TodoList</title>
-<script type="text/javascript">
 
-	window.onload=function(){
-		var	button = document.getElementById("submitButton");
+<title>TodoList</title>
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+
+
+	$(function(){
 		
-		button.addEventListener("click", submitForm);
+		var isChecked = false;
+		$("#signupButton").click(function(){
+			if(isChecked){
+				$("signupForm").submit
+			}else{
+				alert("ID중복확인을 해주세요.");
+			}
+		});
 		
-		function submitForm(){
-			
-			var userid = document.getElementById("userid").value;
-			var userpwd = document.getElementById("userpwd").value;
-			var username = document.getElementById("username").value;
-			
-			if(userid.indexOf('')>0){
-				alert("아이디에 공백이 있습니다.");
-				return;
-			}
-			
-			if(userid.length==0){
-				alert("아이디를 입력 해주세요");
-				return;
-			}
-			if(userpwd.length==0){
-				alert("비밀번호를 입력해주세요");
-				return;
-			}
-			if(username.length==0){
-				alert("이름을 입력 해주세요");
-				return;
-			}
-			
-			document.getElementById("signUpForm").submit();
-			
-		}
-		
-		/* @param id중복체크 */
-		function fn_idChk(){
-			$.ajax ({
-				url : "/idChk.do",
-				type : "post",
-				dataType : "json",
-				data : {"id" : $("#id").val()},
-				success : function(data){
-					if(data ==1 ){
-						alert("중복된 아이디입니다.");
-						
-					}else if(data == 0){
-						$("#idChk").attr("value", "Y");
-						alert("사용가능한 아이디입니다.");
-					}
+		$("#checkId").click(function(){
+			$.ajax({
+				url : "selectGuest.do",
+				data : {id: $("#id").val()}, 
+				type : "get", 
+				success : function(dataFromServer){
+						if(dataFromServer=="ok"){
+							isChecked= true;
+							$("#message").html("사용가능한 아이디 입니다.")
+						}else{
+							("#message").html("중복된 아이디입니다.")
+						}
 				}
 				
 				
-			})
-		}
+			});
+			
+			
+			
+			
+			
+		});
 		
-	
-	}
-
-	
-	
-	
-		
-		
-	
+	});
 	
 
 </script>
@@ -80,11 +55,12 @@
 	<h1>회원가입</h1>
 	<div class="formdiv">
 		<div class="informdiv">
-		<form id="signUpForm" action="signup.do" method="post">
-			<div>
+		<form id="signupForm" action="signup.do" method="post">
+			<div> 
 			<label for="id">아이디</label>
-				<input id="id" type="text" name="id" />
-				<button class="idChk" type="button" id="idChk" onclick="fn_idChk();" value="N">중복확인</button>
+				<input id="id" type="text" name="id" class="id"/>
+				<button class="checkId" type="button" id="checkId" >중복확인</button>
+				<font color="red" id="message"></font>
 			</div>
 			<div>	
 				패스워드:<input id="password" type="password" name="password"><br>
@@ -101,11 +77,11 @@
 			<div>
 				핸드폰번호 : <input id="phone" type="text" name="phone"><br>
 			</div>
-			
-			
-			<button id="submitButton" type="button" class="reg_submit">가입</button>
-			<button type="button" onclick="location.href='home.jsp'">취소</button>
 		</form>
+					
+			<input id="signupButton" type="button" value="회원가입" />
+			<button type="button" onclick="location.href='home.jsp'">취소</button>
+			
 		</div>
 	</div>		
 		

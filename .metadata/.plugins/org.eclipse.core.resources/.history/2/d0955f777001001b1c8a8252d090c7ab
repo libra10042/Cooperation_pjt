@@ -1,0 +1,10 @@
+package com.spring.withwork.vo;
+
+import lombok.Data;
+
+@Data
+public class FileINFO {
+	private int f_no, g_no, file_size;
+	private String org_name, sav_name, del_gb;
+	
+}

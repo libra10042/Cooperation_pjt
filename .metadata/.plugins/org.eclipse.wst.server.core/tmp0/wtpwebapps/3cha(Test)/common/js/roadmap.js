@@ -247,7 +247,51 @@ $().ready(function(){
     
 });
 
-
-
-
-
+///* @param 프로젝트 생성 fileuplaod*/
+//var regex = new RegExp("(.*?)\.(exe|sh|zip|alz)$");
+//var maxSize = 5242880; //5MB
+//
+//function checkExtension(fileName, fileSize){
+//	if(fileSize >= maxSize){
+//		alert("파일 사이즈 초과");
+//		return false;
+//	}
+//	
+//	if(regex.test(fileName)){
+//		alert("해당 종류의 파일은 업로드할 수 없습니다.");
+//		return false;
+//	}
+//	return true;
+//}
+//
+//
+//
+//$(document).ready(function(){
+//	$("#uploadBtn").on("click", function(e){
+//		var formData = new FormData();
+//		
+//		var inputFile = $("input[name='uploadFile']");
+//		var files = inputFile[0].files;
+//		
+//		console.log(files);
+//		
+//		//add filedate to formdata
+//		for(var i=0; i< files.length; i++){
+//			formData.append("uploadFile", files[i]);
+//		}
+//
+//		$.ajax({
+//			url : '/uploadAjaxAction',
+//				processData : false,
+//				contentType : false,
+//				type :'POST',
+//				success : function(result){
+//					alert("Uploaded");
+//				}
+//		});
+//		
+//	});
+//});
+//
+//
+//

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -31,7 +33,7 @@
           <dt>GOOGLE</dt>
           <dd>
               <img src="./common/img/user.png" alt="">
-              <span>최은서</span>님, 안녕하세요.
+              <span>${sessionScope.id}</span>님, 안녕하세요.
           </dd>
       </dl>
       <ul class="allInfo">

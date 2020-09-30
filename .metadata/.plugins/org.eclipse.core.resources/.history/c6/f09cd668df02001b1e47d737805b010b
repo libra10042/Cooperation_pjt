@@ -1,0 +1,29 @@
+package com.spring.withwork.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.spring.withwork.dao.RoadmapDAO;
+
+@Service("roadmapService")
+public class RoadmapService {
+
+	@Autowired	
+	private RoadmapDAO roadmapDAO;
+	
+	
+	public RoadmapService() {
+		System.out.println(">> RoadmapService() 객체 생성");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

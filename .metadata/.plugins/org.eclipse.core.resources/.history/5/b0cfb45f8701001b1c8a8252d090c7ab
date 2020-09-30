@@ -1,0 +1,105 @@
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 2, '디자인');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 2, '개발');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 2, '경영');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 2, '인사');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 2, '마케팅');
+commit;
+
+
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 3, '디자인');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 3, '개발');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 3, '경영');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 3, '인사');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 3, '마케팅');
+commit;
+
+
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 4, '디자인');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 4, '개발');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 4, '경영');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 4, '인사');
+insert into department(d_num, c_num, depart) values (department_seq.nextval, 4, '마케팅');
+commit;
+
+
+
+
+
+-- GUEST SEQUENCE
+CREATE SEQUENCE GUEST_SEQ --시퀀스이름 EX_SEQ
+INCREMENT BY 1 --증감숫자 1
+START WITH 1 --시작숫자 1
+MINVALUE 1 --최소값 1
+MAXVALUE 1000 --최대값 1000
+NOCYCLE --순한하지않음
+NOCACHE; --메모리에 시퀀스값 미리할당
+
+-- COMPANY SEQUENCE
+CREATE SEQUENCE COMPANY_SEQ--시퀀스이름 EX_SEQ
+INCREMENT BY 1 --증감숫자 1
+START WITH 1 --시작숫자 1
+MINVALUE 1 --최소값 1
+MAXVALUE 1000 --최대값 1000
+NOCYCLE --순한하지않음
+NOCACHE; --메모리에 시퀀스값 미리할당
+
+
+-- MEMBER SEQUENCE
+CREATE SEQUENCE MEMBER_SEQ--시퀀스이름 EX_SEQ
+INCREMENT BY 1 --증감숫자 1
+START WITH 1 --시작숫자 1
+MINVALUE 1 --최소값 1
+MAXVALUE 1000 --최대값 1000
+NOCYCLE --순한하지않음
+NOCACHE; --메모리에 시퀀스값 미리할당
+
+
+-- CHATMESSAGE SEQUENCE
+CREATE SEQUENCE CHATMESSAGE_SEQ--시퀀스이름 EX_SEQ
+INCREMENT BY 1 --증감숫자 1
+START WITH 1 --시작숫자 1
+MINVALUE 1 --최소값 1
+MAXVALUE 1000 --최대값 1000
+NOCYCLE --순한하지않음
+NOCACHE; --메모리에 시퀀스값 미리할당
+
+
+-- DEPARTMENT SEQUENCE
+CREATE SEQUENCE DEPARTMENT_SEQ--시퀀스이름 EX_SEQ
+INCREMENT BY 1 --증감숫자 1
+START WITH 1 --시작숫자 1
+MINVALUE 1 --최소값 1
+MAXVALUE 1000 --최대값 1000
+NOCYCLE --순한하지않음
+NOCACHE; --메모리에 시퀀스값 미리할당
+
+
+-- PROJECT SEQUENCE
+CREATE SEQUENCE PROJECT_SEQ--시퀀스이름 EX_SEQ
+INCREMENT BY 1 --증감숫자 1
+START WITH 1 --시작숫자 1
+MINVALUE 1 --최소값 1
+MAXVALUE 1000 --최대값 1000
+NOCYCLE --순한하지않음
+NOCACHE; --메모리에 시퀀스값 미리할당
+
+
+
+COMMIT;
+SELECT * FROM GUEST;
+-- GUEST DATA 추가
+insert into guest values (guest_seq.nextval, 'bit1', '0000', 'bit1', '구로', 'bit1@naver.com', '010-9370-1493', sysdate);
+insert into guest values (guest_seq.nextval, 'bit2', '0000', 'bit2', '서초', 'bit2@naver.com', '010-9372-1493', sysdate);
+insert into guest values (guest_seq.nextval, 'bit3', '0000', 'bit3', '강남', 'bit3@naver.com', '010-9373-1493', sysdate);
+insert into guest values (guest_seq.nextval, 'bit4', '0000', 'bit4', '구로', 'bit4@naver.com', '010-9374-1493', sysdate);
+insert into guest values (guest_seq.nextval, 'bit5', '0000', 'bit5', '의왕', 'bit5@naver.com', '010-9375-1493', sysdate);
+insert into guest values (guest_seq.nextval, 'bit6', '0000', 'bit6', '군포', 'bit6@naver.com', '010-9376-1493', sysdate);
+insert into guest values (guest_seq.nextval, 'bit7', '0000', 'bit7', '산본', 'bit7@naver.com', '010-9377-1493', sysdate);
+insert into guest values (guest_seq.nextval, 'bit8', '0000', 'bit8', '안양', 'bit8@naver.com', '010-9378-1493', sysdate);
+commit;
+desc company;
+select * from company;
+insert into company(c_num, name, regdate, subject) values(company_seq.nextval, '카카오',sysdate, '서비스');
+insert into company(c_num, name, regdate, subject) values(company_seq.nextval, '라인',sysdate, '서비스');
+insert into company(c_num, name, regdate, subject) values(company_seq.nextval, '배달의민족',sysdate, '서비스');
+commit;

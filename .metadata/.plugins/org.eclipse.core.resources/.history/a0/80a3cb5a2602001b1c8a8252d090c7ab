@@ -1,0 +1,12 @@
+package com.spring.withwork.vo;
+
+import lombok.Data;
+
+@Data
+public class Project {
+	private int p_num, c_num, m_num;
+	private String org_name, p_name, p_content, p_person, p_dealine, p_orders, p_country, t_total, p_stat;
+	
+	
+	
+}

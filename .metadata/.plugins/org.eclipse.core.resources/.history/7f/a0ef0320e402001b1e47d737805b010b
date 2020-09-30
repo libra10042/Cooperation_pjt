@@ -1,0 +1,12 @@
+package com.spring.withwork.service;
+
+import com.spring.withwork.vo.Company;
+import com.spring.withwork.vo.Department;
+
+public interface RoadmapMapper {
+	public int insertRoadmap(Roadmap vo );
+	
+	
+	
+	
+}

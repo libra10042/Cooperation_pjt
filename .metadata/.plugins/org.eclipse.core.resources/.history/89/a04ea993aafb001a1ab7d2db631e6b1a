@@ -1,7 +1,0 @@
-package com.spring.withwork.service;
-
-public interface TodoService {
-	public int insertTodo(Todo todo);
-	public List<Todo> selectTodo();
-	public int updateTodo(Todo todo);
-}

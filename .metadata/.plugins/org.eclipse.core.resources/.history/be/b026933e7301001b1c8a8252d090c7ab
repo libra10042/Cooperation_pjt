@@ -1,0 +1,15 @@
+package com.spring.withwork.service;
+
+
+public interface ProjectMapper {
+	
+	
+	
+	
+	//파일 업로드 다운로드
+	public int insertFile(FileInfo vo);
+	public FileInfo selectFile(String g_no);
+	public FileInfo selectFileBySeq(String f_no);
+	
+	
+}

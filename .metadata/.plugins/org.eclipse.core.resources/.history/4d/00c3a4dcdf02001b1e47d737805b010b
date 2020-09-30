@@ -1,0 +1,13 @@
+package com.spring.withwork.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository("repository")
+public class RoadmapDAO {
+	@Autowired 
+	private RoadmapDAO roadmapDao;
+	
+	
+	
+}

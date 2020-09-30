@@ -1,0 +1,24 @@
+package com.spring.withwork.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.spring.withwork.vo.Roadmap;
+
+@Repository("repository")
+public class RoadmapDAO {
+	@Autowired 
+	private RoadmapDAO roadmapDAO;
+	
+	
+	public RoadmapDAO() {
+		System.out.println(">> roadmapDAOMybatis 객체 생성");
+	}
+	
+	//project 등록
+	public void insertProject(Roadmap vo){
+		System.out.println("===> mybatis로 ");
+	}
+	
+	
+}

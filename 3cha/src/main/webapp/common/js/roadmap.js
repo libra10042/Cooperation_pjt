@@ -235,12 +235,13 @@ $().ready(function(){
     $("#messRoad").click(function(){
     	console.log("InfoPopup");
     	$(".roadmapInfoPopup").show();
-    	
+    	$(".darkBack").show();
     })
     
     $('.projectBtn').click(function(){
     	console.log("projectAddPopup");
     	$(".projectAddPopup").show();
+    	$(".darkBack").show();
     	
     })
     

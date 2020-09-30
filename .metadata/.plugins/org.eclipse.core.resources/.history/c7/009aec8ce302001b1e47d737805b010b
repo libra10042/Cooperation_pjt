@@ -1,0 +1,16 @@
+package com.spring.withwork.service;
+
+import com.spring.withwork.vo.Company;
+import com.spring.withwork.vo.Department;
+
+public interface RoadmapMapper {
+
+	public int selectCompany(Company company);
+	public Department selectDepartment(Department department);
+	
+	
+	
+	
+	
+	
+}

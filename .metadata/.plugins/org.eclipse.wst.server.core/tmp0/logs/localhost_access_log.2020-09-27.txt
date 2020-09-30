@@ -83,3 +83,8 @@
 0:0:0:0:0:0:0:1 - - [27/Sep/2020:22:01:57 +0900] "GET /biz/common/common/img/start.png HTTP/1.1" 404 1162
 0:0:0:0:0:0:0:1 - - [27/Sep/2020:22:01:57 +0900] "GET /biz/common/common/img/stop.png HTTP/1.1" 404 1161
 0:0:0:0:0:0:0:1 - - [27/Sep/2020:22:01:57 +0900] "GET /biz/common/common/img/projectMore.png HTTP/1.1" 404 1168
+127.0.0.1 - - [27/Sep/2020:22:17:53 +0900] "GET / HTTP/1.1" 404 1115
+0:0:0:0:0:0:0:1 - - [27/Sep/2020:22:17:55 +0900] "GET /biz/signup.jsp HTTP/1.1" 200 2583
+0:0:0:0:0:0:0:1 - - [27/Sep/2020:22:21:34 +0900] "GET /biz/signup.jsp HTTP/1.1" 200 2586
+0:0:0:0:0:0:0:1 - - [27/Sep/2020:23:22:07 +0900] "GET /biz/signup.jsp HTTP/1.1" 200 2586
+0:0:0:0:0:0:0:1 - - [27/Sep/2020:23:22:08 +0900] "GET /biz/signup.jsp HTTP/1.1" 200 2586

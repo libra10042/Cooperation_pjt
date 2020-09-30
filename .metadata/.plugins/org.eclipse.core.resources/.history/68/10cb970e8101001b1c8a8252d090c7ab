@@ -1,0 +1,6 @@
+package com.spring.withwork.controller;
+
+@Controller("fileUploadController")
+public class FileUploadController {
+
+}
