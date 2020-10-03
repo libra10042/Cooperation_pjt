@@ -1,0 +1,10 @@
+package com.spring.withwork.service;
+
+import java.util.List;
+
+public interface RoadmapService {
+	public List<Roadmap> selectCompany();
+	
+	
+	
+}

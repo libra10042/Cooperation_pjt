@@ -21,8 +21,8 @@ public class RoadmapService{
 	
 	
 	
-	public void insertProject(Roadmap vo){
-		roadmapDAO.insertProject(vo);
+	public int insertProject(Roadmap vo){
+		return roadmapDAO.insertProject(vo);
 		
 	}
 //	

@@ -1,0 +1,27 @@
+package com.spring.withwork.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.spring.withwork.dao.RoadmapDAO;
+import com.spring.withwork.vo.Roadmap;
+
+@Repository
+public class RoadmapServiceImpl implements RoadmapService{
+
+	private RoadmapDAO roadmapDAO;
+	
+	
+	public RoadmapServiceImpl() {
+		System.out.println(">>> roadmapDAO 객체 생성");
+	}
+	
+	
+	
+	@Override
+	public List<Roadmap> selectCompany(Roadmap vo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

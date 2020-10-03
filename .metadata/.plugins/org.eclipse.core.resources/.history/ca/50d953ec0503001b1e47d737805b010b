@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="RoadmapDAO">
+
+	<!-- 회사출력하기 -->
+	<select id="selectCompany" parameterType="Roadmap" resultType="Roadmap">
+		select name from company;
+	</select>
+	<!-- 부서출력하기 -->
+	<select id="selectDepartment" parameterType="Roadmap" resultType="Roadmap">
+		select depart from department; 
+	</select>
+	
+	
+	
+	<insert id="insertProject" parameterType="Roadmap">
+		INSERT INTO PROJECT (P_NUM, P_NAME, P_CONTENT, P_PERSON, P_DEALINE, P_COUNTRY, P_TOTAL, P_STAT, P_SUZU P_BARZU)
+		VALUES (PROJECT_SEQ.NEXTVAL, #{P_NAME}, #{P_CONTENT}, #{P_PERSON}, #{P_DEADLINE}, #{P_COUNTRY}, #{P_TOTAL}, #{P_STAT}, #{P_SUZU}, P_BARZU})
+	</insert>	
+
+	<select id="getRoadmap" parameterType="Roadmap" resultType="Roadmap">
+		SELECT * FROM PROJECT WHERE C_NO = #{C_NO}
+	</select>
+	
+	<select id="getRoadmapList" parameterType="Roadmap" resultType="Roadmap">
+		SELECT * FROM PROJECT
+		WHERE 1=1
+		<if test="searchConditon == 'name' ">
+			AND NAME LIKE '%' || #{searchKeyword} || '%' ORDER BY P_NO DESC
+		</if>
+		<if test="searchCondition == 'depart' ">
+			AND CONTENT LIKE '%' || #{searchKeyword} || '%' ORDER BY P_NO DESC
+		</if> 
+	</select>
+	
+	<select id="getRoadmapList_C" parameterType="Roadmap" resultType="Roadmap">
+		SELECT * FROM PROJECT
+		WHERE NAME LIKE '%' || #{searchKeyword} || '%' ORDER BY P_NO DESC
+	</select>
+	<select id="getRoadmapList_D" parameterType="Roadmap" resultType="Roadmap">
+		SELECT * FROM PROJECT
+		WHERE DEPART LIKE '%' || #{searchKeyword} || '%' ORDER BY P_NO DESC
+	</select>
+		
+		
+		
+		
+		
+	<!-- 파입 업로드 다운로드 처리 -->
+  <insert id="insertFile" parameterType="File">
+  	insert into fileINFO
+  	(
+  		f_no,
+  		g_no,
+  		org_name,
+  		sav_name,
+  		file_size,
+  		f_regdate,
+  	)
+  	values
+  	(
+  		f_no.nextval,
+  		g_no.currval,
+  		#{org_name},
+  		#{sav_name},
+  		#{file_size},
+  		sysdate
+  	)  
+  </insert>
+  <select id="selectFile" resultType="Roadmap" parameterType="String">
+  	select 
+  		F_NO f_no,
+  		G_NO g_no,
+  		ORG_NAME org_name,
+  		SAV_NAME sav_name
+  		FILE_SIZE file_size
+  	FROM
+  		FILEINFO
+  	WHERE
+  		G_NO = ${g_no}
+  </select>
+
+
+	<select id="selectFileBySeq" parameterType="String" resultType="Roadmap">
+		SELECT 
+			F_NO f_no, 
+			G_NO g_no,
+			ORG_NAME org_name,
+			SAV_NAME sav_name
+		FROM
+			FILEINFO
+		WHERE
+			F_NO = #{F_NO}
+			
+	</select>  
+  
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

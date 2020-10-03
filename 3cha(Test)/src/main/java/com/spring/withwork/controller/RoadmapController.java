@@ -2,6 +2,7 @@ package com.spring.withwork.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,13 +10,16 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.spring.withwork.service.RoadmapService;
-import com.spring.withwork.vo.Project;
 import com.spring.withwork.vo.Roadmap;
+
+import lombok.extern.log4j.Log4j;
 
 @Controller
 public class RoadmapController {
@@ -72,21 +76,22 @@ public class RoadmapController {
 	
 	
 	
+	@ResponseBody
 	@RequestMapping("/insertProject.do")
-	public String insertProject(Roadmap vo) throws IllegalStateException, IOException {
+	public int insertProject(Roadmap vo){
 		System.out.println(">> 프로젝트 삽입 - insertProject");
 		
 		System.out.println("> insertProject() vo : " + vo);
-		
+		/*
 		MultipartFile uploadFile = vo.getUploadFile();
 		
 		if(uploadFile.isEmpty()){
 			String fileName = uploadFile.getOriginalFilename();
 			uploadFile.transferTo(new File("C:/upload" + fileName));
-		}
-		roadmapService.insertProject(vo);
+		}*/
+		int result = roadmapService.insertProject(vo);
 		
-		return "roadmapList.do";
+		return result;
 		
 	}
 	
@@ -111,3 +116,79 @@ public class RoadmapController {
 	
 	
 }
+
+
+
+
+/*
+//@param 파일 업로드 관련
+@RequestMapping(value="/fileTest.do", method=RequestMethod.POST)
+public String fileTest(MultipartFile uploadFile){
+	try{
+		System.out.println(">>파일업로드");
+		uploadFile.transferTo(new File("C:/upload"+new Date().getSeconds()+uploadFile.getOriginalFilename()));//@param 저장할 경로 지정.
+	}catch(Exception e){
+		e.printStackTrace();
+	}
+	return "roadmap";
+}
+*/
+
+
+
+/*
+
+
+@Controller("fileUploadController")
+@Log4j
+public class FileUploadController {
+
+	@PostMapping("/uploadFormAction")
+	public void uploadFormPost(MultipartFile[] uploadFile, Model model){
+		
+		
+		log.info("update ajax post...");
+		
+		String uploadFolder = "C:\\upload";
+		
+		
+		
+		for(MultipartFile multipartFile : uploadFile){
+			log.info("-------------------------");
+			log.info("Upload File Name : " + multipartFile.getOriginalFilename());
+			log.info("Upload File Size : " + multipartFile.getSize());
+		
+			
+			String uploadFileName = multipartFile.getOriginalFilename();
+			
+			uploadFileName = uploadFileName.substring(uploadFileName.lastIndexOf("\\") +1 );
+			
+			log.info("only file name : " + uploadFileName);
+			
+			File saveFile = new File(uploadFolder, uploadFileName);
+			
+			
+			try{
+				multipartFile.transferTo(saveFile);
+			}catch(Exception e){
+				log.error(e.getMessage());
+			}
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+}
+
+
+
+
+*/

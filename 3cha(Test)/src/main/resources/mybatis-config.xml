@@ -5,14 +5,12 @@
 <configuration>
   <typeAliases>
   	<typeAlias alias="Guest" type="com.spring.withwork.vo.Guest"/>
-  	<typeAlias alias="Todo" type="com.spring.withwork.vo.Todo"/>
-  	<typeAlias alias="Todo" type="com.spring.withwork.vo.Roadmap"/>
+  	<typeAlias alias="Roadmap" type="com.spring.withwork.vo.Roadmap"/>
   	
   </typeAliases>
   
   <mappers>
    <mapper resource="mappings/GuestMapper.xml"/>
-   <mapper resource="mappings/TodoMapper.xml" />
    <mapper resource="mappings/RoadmapMapper.xml"/>
   </mappers>
 </configuration>

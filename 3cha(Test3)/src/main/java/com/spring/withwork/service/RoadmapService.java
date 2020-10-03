@@ -1,0 +1,14 @@
+package com.spring.withwork.service;
+
+import java.util.List;
+
+import com.spring.withwork.vo.Roadmap;
+
+public interface RoadmapService {
+	public List<Roadmap> selectCompany(Roadmap vo);
+	//public List<Roadmap> selectDepart(Roadmap vo);
+	
+	
+	public int insertProject(Roadmap vo);
+	
+}

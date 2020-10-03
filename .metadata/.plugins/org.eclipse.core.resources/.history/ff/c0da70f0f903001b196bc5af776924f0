@@ -1,0 +1,17 @@
+package com.spring.withwork.service;
+
+import org.springframework.stereotype.Repository;
+
+import com.spring.withwork.dao.RoadmapDAO;
+
+@Repository
+public class RoadmapServiceImpl {
+
+	private RoadmapDAO roadmapDAO;
+	
+	
+	public RoadmapServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

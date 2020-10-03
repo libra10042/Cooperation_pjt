@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.spring.withwork.dao.GuestRepository;
+import com.spring.withwork.dao.GuestDAO;
 import com.spring.withwork.service.GuestService;
 import com.spring.withwork.vo.Guest;
 
@@ -17,7 +17,7 @@ import com.spring.withwork.vo.Guest;
 public class GuestController {
 
 	@Autowired
-	GuestRepository dao;
+	GuestDAO dao;
 	GuestService service;
 	
 	public GuestController() {
@@ -33,7 +33,8 @@ public class GuestController {
 		int result = dao.insertGuest(user);
 		
 		if(result==1){
-			return "login.jsp";
+			System.out.println("회원가입 되었습니다.");
+			return "home.jsp";
 		}else{
 			return "signup.jsp";
 		}
@@ -46,8 +47,10 @@ public class GuestController {
 		Guest result = dao.selectGuest(guest);
 		
 		if(result ==null){
+			System.out.println("로그인실패하셨습니다.");
 			return "login.jsp";
 		}else{
+			System.out.println("");
 			session.setAttribute("id", result.getId());
 			session.setAttribute("password", result.getPassword());
 		

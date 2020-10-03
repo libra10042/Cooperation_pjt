@@ -3,14 +3,14 @@ package com.spring.withwork.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.spring.withwork.dao.GuestRepository;
+import com.spring.withwork.dao.GuestDAO;
 
 @Service("guestService")
 public class GuestService {
 	
 	
 	@Autowired
-	GuestRepository guestRepository;
+	GuestDAO guestDAO;
 	
 	
 	public GuestService() {
@@ -23,7 +23,7 @@ public class GuestService {
 		
 		int result = 0; 
 		try{
-			result = guestRepository.guestIdCheck(id);
+			result = guestDAO.guestIdCheck(id);
 		}catch(Exception e){
 			e.printStackTrace();
 			return result; 

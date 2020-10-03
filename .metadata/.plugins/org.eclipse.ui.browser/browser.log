@@ -26,3 +26,6 @@
 9월 30, 2020 12:52:58.89 [2964:28956:0930/125258.898:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
 9월 30, 2020 12:58:05.81 [30408:28932:0930/125805.813:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
 9월 30, 2020 16:01:42.63 [30408:27400:0930/160142.623:ERROR:socket_stream.cc(219)] Closing stream with result -2
+9월 30, 2020 16:06:15.40 [30408:27400:0930/160615.407:ERROR:socket_stream.cc(219)] Closing stream with result -2
+9월 30, 2020 16:53:52.33 [30408:27400:0930/165352.330:ERROR:socket_stream.cc(219)] Closing stream with result -2
+9월 30, 2020 20:35:09.18 [30408:27400:0930/203509.169:ERROR:socket_stream.cc(219)] Closing stream with result -2
