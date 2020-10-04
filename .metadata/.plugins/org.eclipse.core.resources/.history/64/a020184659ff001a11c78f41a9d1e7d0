@@ -1,5 +1,0 @@
-package com.spring.withwork.service;
-@Service
-public class ProjectService {
-
-}

@@ -1,9 +1,0 @@
-package com.spring.withwork.vo;
-
-import lombok.Data;
-
-@Data
-public class User {
-	private int g_num;
-	private String id, password, g_name, address, email, phone;
-}

@@ -31,8 +31,8 @@ public class RoadmapServiceImpl implements RoadmapService{
 	
 	
 	@Override
-	public int insertProject(Roadmap vo) {
-		return roadmapDAO.insertProject(vo); 
+	public void insertProject(Roadmap vo) {
+		roadmapDAO.insertProject(vo); 
 	}
 	
 	

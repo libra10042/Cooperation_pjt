@@ -9,6 +9,7 @@ public interface RoadmapService {
 	//public List<Roadmap> selectDepart(Roadmap vo);
 	
 	
-	public int insertProject(Roadmap vo);
+	public void insertProject(Roadmap vo);
+
 	
 }

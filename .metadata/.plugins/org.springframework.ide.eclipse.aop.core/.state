@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="3cha(Test2)"/>
 <aop-project name="3cha(Test3)"/>
-<aop-project name="3cha(Test)"/>
 <aop-project name="TodoList"/>
-<aop-project name="3cha"/>
 </aop-reference-model>

@@ -31,9 +31,9 @@ public class RoadmapDAO {
 	}*/
 	
 	
-	public int insertProject(Roadmap vo){
+	public void insertProject(Roadmap vo){
 		System.out.println(">> mybatis로 insertProject() 실행");
-		return mybatis.insert("RoadmapDAO.insertProject", vo);
+		mybatis.insert("RoadmapDAO.insertProject", vo);
 	}
 	
 	

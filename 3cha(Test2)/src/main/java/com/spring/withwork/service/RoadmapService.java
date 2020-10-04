@@ -8,4 +8,6 @@ public interface RoadmapService {
 	public List<Roadmap> selectCompany(Roadmap vo);
 	public List<Roadmap> selectDepart(Roadmap vo);
 	
+	
+	public void insertProject(Roadmap vo);
 }

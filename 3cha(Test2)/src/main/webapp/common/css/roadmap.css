@@ -58,15 +58,15 @@
 }
 
 .stateForm > dt.waiting{
-  background-image: url(../common/img/wait.png);
+   background-image: url(../img/wait.png); 
 }
 
 .stateForm > dt.starting{
-  background-image: url(../common/img/start.png);
+   background-image: url(../img/start.png);
 }
 
 .stateForm > dt.stopping{
-  background-image: url(../common/img/stop.png);
+  background-image: url(../img/stop.png);
 }
 
 .stateForm > dd{
@@ -176,18 +176,16 @@
 }
 
 /* ------------- ÆË¾÷ ÃæÁø ------------- */
-.pop .btnBox {
+.pop .btnBox a {
     display: inline-block;
     width: 20%;
     height: 44px;
     line-height: 44px;
+    color: white;
+    background: #272a44;
     font-size: 18px;
     text-align: center;
     border-radius: 44px;
-    color : white;
-    
-    z-index : 100;
-    
 }
 
 

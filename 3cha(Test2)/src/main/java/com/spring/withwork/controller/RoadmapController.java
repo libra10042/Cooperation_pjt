@@ -1,5 +1,6 @@
 package com.spring.withwork.controller;
 
+import java.io.File;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.spring.withwork.service.RoadmapService;
 import com.spring.withwork.vo.Roadmap;
@@ -66,6 +68,34 @@ public class RoadmapController {
 		return "roadmap.jsp";
 		
 	}
+	
+	
+	
+	
+	@RequestMapping("/insertProject.do")
+	public String projectCreate(Roadmap vo){
+		System.out.println(">> 프로젝트 생성 - projectCreate");
+		System.out.println(">> projectCreate() vo : " + vo);
+		
+		MultipartFile uploadFile = vo.getUploadFile();
+		
+		System.out.println("> uploadFile :" + uploadFile);
+		if(!uploadFile.isEmpty()){
+			String fileName = uploadFile.getOriginalFilename();
+//			uploadFile.transferTo(new File("C:/upload" + fileName));
+		}
+		roadmapService.insertProject(vo);
+		
+		return "roadmap.jsp";
+		
+		
+		
+		
+	}
+	
+	
+	
+	
 	
 	
 	

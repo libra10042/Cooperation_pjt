@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="RoadmapDAO">
+
+
+	<select id="selectCompany" parameterType="String" resultType="Roadmap">
+		SELECT NAME FROM COMPANY 	
+	</select>
+
+	<!-- <select id="selectDepart" parameterType="Roadmap" resultType="Roadmap">
+		SELECT C.NAME, D.DEPART FROM DEPARTMENT D, COMPANY C WHERE C.C_NUM = D.C_NUM
+	</select> -->
+
+
+
+	<insert id="insertProject" parameterType="Roadmap">
+		INSERT INTO PROJECT(
+			P_NUM
+			,C_NUM
+			,P_NAME
+			,P_CONTENT
+			,P_PERSON
+			,P_DEADLINE
+			,P_COUNTRY 
+			,P_STAT
+			,P_SUZU
+			,P_BARZU
+			,P_TOTAL
+		)
+		VALUES
+		(
+			PROJECT_SEQ.NEXTVAL
+			,15
+			,#{P_NAME}
+			,#{P_CONTENT}
+			,#{P_PERSON}
+			,#{P_DEADLINE}
+			,#{P_COUNTRY}
+			,'검토'
+			,#{P_SUZU}
+			,#{P_BARZU}
+			,#{P_TOTAL}
+		)
+	
+	
+	</insert>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

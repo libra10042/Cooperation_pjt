@@ -1,0 +1,5 @@
+package com.spring.blog.test;
+
+public class BlogControllerTest {
+
+}

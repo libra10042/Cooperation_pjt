@@ -14,6 +14,32 @@
 	</select> 
 
 
+	<insert id="insertProject" parameterType="Roadmap">
+		INSERT INTO PROJECT
+		(
+			P_NUM
+			,P_NAME
+			,P_CONTENT
+			,P_DEADLINE
+			,P_COUNTRY
+			,P_TOTAL
+			,P_STAT
+			,P_SUZU
+			,P_BARZU
+		)
+		VALUES
+		(
+			#{PROJECT_SEQ.NEXTVAL}
+			,#{P_NAME}
+			,#{P_CONTENT}
+			,#{P_DEADLINE}
+			,#{P_COUNTRY}
+			,#{P_TOTAL}
+			,'검토'
+			,#{P_SUZU}
+			,#{P_BARZU}
+		)
+	</insert>
 
 </mapper>
 

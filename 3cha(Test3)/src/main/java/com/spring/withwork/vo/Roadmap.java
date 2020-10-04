@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 public class Roadmap {
-	private int p_num; //프로젝트 일련번호
+	private int p_num;
 	private String p_name; //프로젝트 이름
 	private String p_content; //프로젝트 내용
 	private String p_person; //프로젝트 구성인원
@@ -46,20 +46,49 @@ public class Roadmap {
 	
 	//검색조건용 필드 추가
 	private String searchCondition; 
-	private String searchKeyword;
+	private String searchKeyword;	
 	
 	
-	
+	public Roadmap() {
+		System.out.println(">> roadmap vo 생성");
+	}
 
+	public Roadmap(int p_num, String p_name, String p_content, String p_person, String p_deadline, String p_country,
+			String p_total, String p_stat, String p_suzu, String p_barzu) {
+		super();
+		this.p_num = p_num;
+		this.p_name = p_name;
+		this.p_content = p_content;
+		this.p_person = p_person;
+		this.p_deadline = p_deadline;
+		this.p_country = p_country;
+		this.p_total = p_total;
+		this.p_stat = p_stat;
+		this.p_suzu = p_suzu;
+		this.p_barzu = p_barzu;
+	}
+
+	
+	
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Roadmap [p_num=" + p_num + ", p_name=" + p_name + ", p_content=" + p_content + ", p_person=" + p_person
+				+ ", p_deadline=" + p_deadline + ", p_country=" + p_country + ", p_total=" + p_total + ", p_stat="
+				+ p_stat + ", p_suzu=" + p_suzu + ", p_barzu=" + p_barzu +"]";
+	}
 
 	public int getP_num() {
 		return p_num;
 	}
 
-
 	public void setP_num(int p_num) {
 		this.p_num = p_num;
 	}
+
+
 
 
 	public String getP_name() {
@@ -152,16 +181,28 @@ public class Roadmap {
 	}
 
 
-	@Override
-	public String toString() {
-		return "Project [p_num=" + p_num + ", p_name=" + p_name + ", p_content=" + p_content + ", p_person=" + p_person
-				+ ", p_deadline=" + p_deadline + ", p_country=" + p_country + ", p_total=" + p_total + ", p_stat="
-				+ p_stat + ", p_suzu=" + p_suzu + ", p_barzu=" + p_barzu + ", searchCondition=" + searchCondition
-				+ ", searchKeyword=" + searchKeyword + ", uploadFile=" + uploadFile + "]";
-	}
-
+	
 
 	
+	
+	
+
+	public Roadmap(int p_num, String p_name, String p_content, String p_person, String p_deadline, String p_country,
+			String p_total, String p_stat, String p_suzu, String p_barzu, int c_num) {
+		super();
+		this.p_num = p_num;
+		this.p_name = p_name;
+		this.p_content = p_content;
+		this.p_person = p_person;
+		this.p_deadline = p_deadline;
+		this.p_country = p_country;
+		this.p_total = p_total;
+		this.p_stat = p_stat;
+		this.p_suzu = p_suzu;
+		this.p_barzu = p_barzu;
+		this.c_num = c_num;
+	}
+
 	@JsonIgnore //JSON 데이터 변경하지 않도록 제외 처리
 	public String getSearchCondition() {
 		return searchCondition;

@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="./common/css/roadmap.css">
 <script src="./common/js/roadmap.js"></script>
 
+
 <title>WithWork</title>
 </head>
 <body>
@@ -93,11 +94,18 @@
 			})
 			
 		}
- */
-		
-		
-		
-		
+		 */
+		 
+		 
+		 $(function(){
+			 $(".#sendBtnP").click(function(){
+				 location.href='insertProject.do';
+			 });
+		 })
+		 
+		 
+		 
+		 
 	</script>
 
 
@@ -123,8 +131,7 @@
 							<c:forEach items="${companyList}" var="companyList">
 								<option>${companyList.name}</option>
 							</c:forEach>
-						</select> 
-						<select id="depart" name="depart">
+						</select> <select id="depart" name="depart">
 							<c:forEach items="${departList}" var="departList">
 								<option>${departList.depart}</option>
 							</c:forEach>
@@ -136,8 +143,8 @@
 				<div class="roadMapState smallMG">
 					<dl class="stateForm">
 						<dt class="waiting" name="p_stat">검토 중</dt>
-						
-						<!-- <dd>
+
+						<dd>
 							<a href="#" id="roadmapPopupInfo">
 								<dl class="projectThumb">
 									<dt>LINE</dt>
@@ -147,10 +154,8 @@
 										sequi. Vel, consectetur totam.</dd>
 								</dl>
 							</a>
-							
-							
-						</dd> --> 
-						<!-- <dd>
+						</dd>
+						<dd>
 							<a href="#" id="roadmapPopupInfo">
 								<dl class="projectThumb">
 									<dt>LINE</dt>
@@ -160,13 +165,11 @@
 										sequi. Vel, consectetur totam.</dd>
 								</dl>
 							</a>
-							
-							
-						</dd> -->
+						</dd>
 					</dl>
 					<dl class="stateForm">
 						<dt class="starting" name="p_stat">진행 중</dt>
-						<!-- <dd>
+						<dd>
 							<a href="#">
 								<dl class="projectThumb">
 									<dt>LINE</dt>
@@ -176,9 +179,9 @@
 										sequi. Vel, consectetur totam.</dd>
 								</dl>
 							</a>
-						</dd> -->
-						
-						<!-- <dd>
+						</dd>
+
+						<dd>
 							<a href="#">
 								<dl class="projectThumb">
 									<dt>LINE</dt>
@@ -188,12 +191,12 @@
 										sequi. Vel, consectetur totam.</dd>
 								</dl>
 							</a>
-						</dd> -->
+						</dd>
 
 					</dl>
 					<dl class="stateForm">
 						<dt class="stopping" name="p_stat">승인대기 중</dt>
-						<!-- <dd>
+						<dd>
 							<a href="#">
 								<dl class="projectThumb">
 									<dt>LINE</dt>
@@ -203,9 +206,9 @@
 										sequi. Vel, consectetur totam.</dd>
 								</dl>
 							</a>
-						</dd> -->
-						
-						<!-- <dd>
+						</dd>
+
+						<dd>
 							<a href="#">
 								<dl class="projectThumb">
 									<dt>LINE</dt>
@@ -215,7 +218,7 @@
 										sequi. Vel, consectetur totam.</dd>
 								</dl>
 							</a>
-						</dd> -->
+						</dd>
 
 					</dl>
 				</div>
@@ -304,7 +307,8 @@
 	</div>
 	<div class="darkBack"></div>
 	<!-- ------- 프로젝트 생성 팝업 -------- -->
-	<form action="projectCreate.do" method="post">
+	<form action="insertProject.do" method="post"
+		enctype="multipart/form-data">
 		<div class="popup projectAddPopup">
 			<dl>
 				<dt>
@@ -321,61 +325,58 @@
 							</colgroup>
 							<tr>
 								<th>서류제출</th>
-								<td colspan="3">
-									<!-- <div class="uploadDiv">
-                            		<input type="file" name="uploadFile" multiple>
-                            	</div>
-                            	<button id='uploadBtn'>Upload</button> -->
-                            	<td colspan="3"><input type="text" style="width : 100%" name="p_num" /></td>
-                            	
-								</td>
+								<td colspan="3"><input type="file" name="uploadFile" /></td>
 							</tr>
 							<tr>
 								<th>프로젝트명</th>
-								<td colspan="3"><input type="text" style="width: 100%" name="p_name" /></td>
+								<td colspan="3"><input type="text" style="width: 100%"
+									name="p_name" /></td>
 							</tr>
 							<tr>
 								<th>내용</th>
-								<td colspan="3"><input type="text" style="width: 100%" name="p_content" /></td>
+								<td colspan="3"><input type="text" style="width: 100%"
+									name="p_content" /></td>
 							</tr>
 							<tr>
 								<th>담당자</th>
 								<td colspan="3"></td>
-							</tr>
-
 							<tr>
 								<th>투입인원</th>
-								<td colspan="3"><input type="text" style="width: 100%" name="p_person"/></td>
+								<td colspan="3"><input type="text" style="width: 100%"
+									name="p_person" /></td>
 							</tr>
 
 							<tr>
 								<th>수주</th>
-								<td colspan="1"><input type="text" style="width: 100%" name="p_suzu" /></td>
+								<td colspan="1"><input type="text" style="width: 100%"
+									name="p_suzu" /></td>
 								<th>발주</th>
-								<td colspan="1"><input type="text" style="width: 100%" name="p_barzu" /></td>
+								<td colspan="1"><input type="text" style="width: 100%"
+									name="p_barzu" /></td>
 							</tr>
 
 
 							<tr>
 								<th>예상기한</th>
-								<td colspan="1"><input type="text" style="width: 100%" name="p_deadline" /></td>
+								<td colspan="1"><input type="text" style="width: 100%"
+									name="p_deadline" /></td>
 								<th>국내/해외</th>
-								<td colspan="1"><input type="checkbox"
-									value="국내" name="p_country">국내 <input type="checkbox"
-									value="해외" checked="checked" name=p_country>해외</td>
+								<td colspan="1"><input type="checkbox" value="국내"
+									name="p_country">국내 <input type="checkbox" value="해외"
+									checked="checked" name=p_country>해외</td>
 							</tr>
 
 
 
 							<tr>
 								<th>투입금액</th>
-								<td colspan="3"><input type="text" style="width: 100%" name="p_total" />
-								</td>
+								<td colspan="3"><input type="text" style="width: 100%"
+									name="p_total" /></td>
 							</tr>
 						</table>
 					</div>
 					<div class="btnBox">
-						<a href="#" class="popupOK">신청</a> <a href="#">취소</a>
+						<input type="submit" id="sendBtnP" class="popupOK" value="생성"> &nbsp;<a href="#">취소</a>
 					</div>
 				</dd>
 			</dl>

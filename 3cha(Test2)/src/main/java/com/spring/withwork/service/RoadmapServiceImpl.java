@@ -28,5 +28,10 @@ public class RoadmapServiceImpl implements RoadmapService{
 		return roadmapDAO.selectDepart(vo);
 	}
 	
+	@Override
+	public void insertProject(Roadmap vo) {
+		roadmapDAO.insertProject(vo);
+		
+	}
 	
 }

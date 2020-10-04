@@ -498,7 +498,7 @@
 						</table>
 					</div>
 					<div class="btnBox">
-						<input type="button" id="sendBtn" class="popupOK" value="생성"> <a href="#">취소</a>
+						<input type="button" id="sendBtn" class="popupOK" value="생성"><a href="#">취소</a>
 					</div>
 				</dd>
 			</dl>

@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 
-@Data
+
 public class Roadmap {
 	private int p_num; //프로젝트 일련번호
 	private String p_name; //프로젝트 이름
@@ -49,20 +49,13 @@ public class Roadmap {
 	private String searchCondition; 
 	private String searchKeyword;
 	
-	
-	
-	
-	
-
-
-	public Roadmap(int c_num, int g_num, String name, int d_num, String depart) {
-		super();
-		this.c_num = c_num;
-		this.g_num = g_num;
-		this.name = name;
-		this.d_num = d_num;
-		this.depart = depart;
+	public Roadmap() {
+		System.out.println(">> Roadmap vo 생성" );
 	}
+
+	
+
+	
 
 
 	public int getP_num() {
@@ -324,6 +317,22 @@ public class Roadmap {
 
 	public void setDel_dg(String del_dg) {
 		this.del_dg = del_dg;
+	}
+
+
+	public Roadmap(int p_num, String p_name, String p_content, String p_person, String p_deadline, String p_country,
+			String p_total, String p_stat, String p_suzu, String p_barzu) {
+		super();
+		this.p_num = p_num;
+		this.p_name = p_name;
+		this.p_content = p_content;
+		this.p_person = p_person;
+		this.p_deadline = p_deadline;
+		this.p_country = p_country;
+		this.p_total = p_total;
+		this.p_stat = p_stat;
+		this.p_suzu = p_suzu;
+		this.p_barzu = p_barzu;
 	}
 	
 	
